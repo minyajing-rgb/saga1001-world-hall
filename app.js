@@ -1,7 +1,7 @@
 const shortcuts = [
   {id:'bunny',name:'Bunny',caption:'Crystal Oracle',href:'https://bunny.saga1001.com/',intro:'原创水晶神谕卡与日常指引。'},
   {id:'plot',name:'PLOT',caption:'Relationships',href:'https://plot.saga1001.com/',intro:'从关系里的信号，找到更清楚的下一步。'},
-  {id:'dreamplot',name:'DreamPlot',caption:'Dream Journal',href:'https://plot-your-dream.base44.app/book',intro:'梦频日记试读与预约。'},
+  {id:'dreamplot',name:'DreamPlot',caption:'电子书预售 · EPUB＋PDF',href:'https://plot-your-dream.base44.app/book?utm_source=saga1001&utm_campaign=book_preorder',intro:'《梦频日记：一个梦占者的自述》 · Joyce 艾小米。¥54.40预售，11月15日交付。'},
   {id:'breath',name:'Breath',caption:'iOS App',href:'https://apps.apple.com/us/app/chromatic-breathing/id6742974213',intro:'用色彩和节奏练习呼吸。'},
   {id:'dharma',name:'Dharma',caption:'Buddhist Atlas',href:'https://dharma.saga1001.com/',intro:'佛教知识与文化探索。'},
   {id:'bible',name:'Bible',caption:'Study',href:'https://bible.saga1001.com/',intro:'圣经研究与内容项目。'},
@@ -12,7 +12,7 @@ const brandMarks = {bunny:'B',plot:'P✦',dreamplot:'梦',breath:'◌',dharma:'D
 const brandArt = {
   bunny:'<span class="art-overline">A LITTLE MAGIC, EVERY DAY</span><strong>Bunny<span>✦</span></strong><em>CRYSTAL ORACLE</em>',
   plot:'<span class="art-overline">PEOPLE OVER OVERTHINKING</span><strong>PLOT<span>✦</span></strong><em>RELATIONSHIPS, MORE CLEARLY</em>',
-  dreamplot:'<span class="art-overline">DREAMPLOT ✦</span><strong class="art-chinese">梦频<br>日记</strong><em>把梦写成线索</em>',
+  dreamplot:'<img class="dreamfreq-card-cover" src="https://plot-your-dream.base44.app/book-assets/dreamfreq-approved-cover.jpg" alt="" loading="lazy"/>',
   breath:'<span class="art-overline">CHROMATIC BREATHING</span><span class="breath-rings" aria-hidden="true"></span><strong>Breath</strong>',
   dharma:'<span class="art-overline">佛典全球知识地图</span><span class="dharma-orbits" aria-hidden="true"><i></i><i></i><i></i></span><strong>Dharma Atlas</strong>',
   bible:'<span class="art-overline">从约翰到耶稣</span><strong>From John<br>to Jesus</strong><em>READ · REFLECT · DISCOVER</em>',
@@ -20,7 +20,7 @@ const brandArt = {
   quri:'<span class="art-overline">AN ATLAS OF WONDER</span><strong>Quri<br>Atlas</strong><em>EXPLORE THE UNIVERSE</em>'
 };
 const shortcutIcon = p => `<span class="shortcut-icon shortcut-icon--${p.id}" aria-hidden="true">${brandMarks[p.id]}</span>`;
-const brandCard = p => `<a href="${p.href}" class="brand-world brand-world--${p.id}" target="_blank" rel="noopener noreferrer" aria-label="Open ${p.name} website"><div class="brand-world-art" aria-hidden="true">${brandArt[p.id]}</div><div class="brand-world-copy"><small>${p.caption}</small><h3>${p.name}</h3><p>${p.intro}</p><span>Visit website <b aria-hidden="true">↗</b></span></div></a>`;
+const brandCard = p => `<a href="${p.href}" class="brand-world brand-world--${p.id}" target="_blank" rel="noopener noreferrer" aria-label="Open ${p.name} website"><div class="brand-world-art" aria-hidden="true">${brandArt[p.id]}</div><div class="brand-world-copy"><small>${p.caption}</small><h3>${p.name}</h3><p>${p.intro}</p><span>${p.id==='dreamplot'?'预订电子书 ¥54.40':'Visit website'} <b aria-hidden="true">↗</b></span></div></a>`;
 const shortcutLink = p => `<a href="${p.href}" class="dock-item shortcut-item" target="_blank" rel="noopener noreferrer" aria-label="Open ${p.name}">${shortcutIcon(p)}<strong>${p.name}</strong><small>${p.caption} ↗</small></a>`;
 const topics = [
   {name:'Mindfulness',count:'1.2K posts',icon:'✦'},
