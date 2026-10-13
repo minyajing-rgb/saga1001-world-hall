@@ -20,6 +20,7 @@
 
 /* Product worlds borrow the visual language of their destinations. */
 .brand-world-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px;text-align:left}
+.vision-section{margin-top:96px;padding-top:62px;border-top:1px solid #e6e8f2;text-align:left}.vision-section h2{margin:0;color:#182353;font-size:clamp(30px,3.4vw,45px);letter-spacing:-1.7px}.vision-intro{max-width:670px;margin:12px 0 0;color:var(--muted);line-height:1.7}.vision-section .poster-grid{margin-top:34px}.vision-section .poster-card{min-width:0;overflow:hidden}.vision-section .poster-card span{line-height:1.35;min-height:45px}@media(max-width:640px){.vision-section{margin-top:65px;padding-top:42px}.vision-section .poster-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.vision-section .poster-card span{font-size:10px;min-height:38px;padding:9px 3px 3px}}
 .brand-world-grid .brand-world{display:block;min-width:0;padding:0;overflow:hidden;border:1px solid #e8e8ee;border-radius:18px;background:#fff;box-shadow:0 8px 25px #2632510b;transition:transform .2s,box-shadow .2s}
 .brand-world-grid .brand-world:hover,.brand-world-grid .brand-world:focus-visible{transform:translateY(-5px);box-shadow:0 18px 36px #26325125}
 .brand-world-art{height:190px;padding:18px 20px;display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden;isolation:isolate}
