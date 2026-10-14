@@ -1,0 +1,34 @@
+name: Build search-ready pages
+on:
+  push:
+    branches: [saga/discovery-2026-10-14]
+    paths: ['discovery/**', '.github/workflows/build-discovery.yml', 'app.js', 'press.mjs']
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: discovery-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  render:
+    if: github.ref == 'refs/heads/saga/discovery-2026-10-14'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          ref: ${{ github.ref_name }}
+      - name: Build ordinary static HTML and validate
+        run: |
+          node discovery/build.mjs
+          node discovery/test.mjs
+      - name: Commit generated files on the review branch only
+        env:
+          TARGET_BRANCH: ${{ github.ref_name }}
+        run: |
+          node -e "const fs=require('fs'),cp=require('child_process');const files=JSON.parse(fs.readFileSync('discovery/generated-files.json'));cp.execFileSync('git',['add','--',...files]);"
+          if git diff --cached --quiet; then exit 0; fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'build(discovery): render validated HTML, sitemap and public crawl resources'
+          git push origin "HEAD:$TARGET_BRANCH"
