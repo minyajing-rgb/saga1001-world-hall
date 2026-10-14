@@ -1,7 +1,7 @@
 const shortcuts = [
   {id:'bunny',name:'Bunny',caption:'Crystal Oracle',href:'https://bunny.saga1001.com/',intro:'原创水晶神谕卡与日常指引。'},
   {id:'plot',name:'PLOT',caption:'Relationships',href:'https://plot.saga1001.com/',intro:'从关系里的信号，找到更清楚的下一步。'},
-  {id:'dreamplot',name:'DreamPlot',caption:'电子书预售 · EPUB＋PDF',href:'https://plot-your-dream.base44.app/book?utm_source=saga1001&utm_campaign=book_preorder',intro:'《梦频日记：一个梦占者的自述》 · Joyce 艾小米。¥54.40预售，11月15日交付。'},
+  {id:'dreamplot',name:'DreamPlot',caption:'电子书预售 · EPUB＋PDF',href:'https://dreamplot.saga1001.com/book?utm_source=saga1001&utm_campaign=book_preorder',intro:'《梦频日记：一个梦占者的自述》 · Joyce 艾小米。¥54.40预售，11月15日交付。'},
   {id:'breath',name:'Breath',caption:'iOS App',href:'https://apps.apple.com/us/app/chromatic-breathing/id6742974213',intro:'用色彩和节奏练习呼吸。'},
   {id:'dharma',name:'Dharma',caption:'Buddhist Atlas',href:'https://dharma.saga1001.com/',intro:'佛教知识与文化探索。'},
   {id:'bible',name:'Bible',caption:'Study',href:'https://bible.saga1001.com/',intro:'圣经研究与内容项目。'},
@@ -12,7 +12,7 @@ const brandMarks = {bunny:'B',plot:'P✦',dreamplot:'梦',breath:'◌',dharma:'D
 const brandArt = {
   bunny:'<span class="art-overline">A LITTLE MAGIC, EVERY DAY</span><strong>Bunny<span>✦</span></strong><em>CRYSTAL ORACLE</em>',
   plot:'<span class="art-overline">PEOPLE OVER OVERTHINKING</span><strong>PLOT<span>✦</span></strong><em>RELATIONSHIPS, MORE CLEARLY</em>',
-  dreamplot:'<img class="dreamfreq-card-cover" src="https://plot-your-dream.base44.app/book-assets/dreamfreq-approved-cover.jpg" alt="" loading="lazy"/>',
+  dreamplot:'<img class="dreamfreq-card-cover" src="./assets/dreamfreq-approved-cover.jpg" alt="" loading="lazy"/>',
   breath:'<span class="art-overline">CHROMATIC BREATHING</span><span class="breath-rings" aria-hidden="true"></span><strong>Breath</strong>',
   dharma:'<span class="art-overline">佛典全球知识地图</span><span class="dharma-orbits" aria-hidden="true"><i></i><i></i><i></i></span><strong>Dharma Atlas</strong>',
   bible:'<span class="art-overline">从约翰到耶稣</span><strong>From John<br>to Jesus</strong><em>READ · REFLECT · DISCOVER</em>',
