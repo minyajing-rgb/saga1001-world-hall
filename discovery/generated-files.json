@@ -36,5 +36,6 @@
   "404.html",
   "discovery/pages.json",
   "discovery/legacy-routes.json",
-  "discovery/generated-files.json"
+  "discovery/generated-files.json",
+  "assets/saga1001-search-preview.jpg"
 ]
