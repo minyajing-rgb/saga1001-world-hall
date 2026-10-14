@@ -2,7 +2,7 @@ name: Build search-ready pages
 on:
   push:
     branches: [saga/discovery-2026-10-14]
-    paths: ['discovery/**', '.github/workflows/build-discovery.yml', 'app.js', 'press.mjs']
+    paths: ['discovery/**', '.github/workflows/build-discovery.yml', 'app.js', 'press.mjs', 'package.json']
   workflow_dispatch:
 permissions:
   contents: write
@@ -20,8 +20,8 @@ jobs:
           ref: ${{ github.ref_name }}
       - name: Build ordinary static HTML and validate
         run: |
-          node discovery/build.mjs
-          node discovery/test.mjs
+          npm run build:discovery
+          npm run test:discovery
       - name: Commit generated files on the review branch only
         env:
           TARGET_BRANCH: ${{ github.ref_name }}
