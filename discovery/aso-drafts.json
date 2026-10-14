@@ -1,0 +1,35 @@
+{
+  "updated": "2026-10-14",
+  "status": "DRAFTS_NOT_SUBMITTED_TO_STORES",
+  "scope": "Store field proposals are distinct from published website metadata. No store account or product identity is guessed.",
+  "apple_limits": {"name_characters":30,"subtitle_characters":30,"keywords_characters":100,"keywords_utf8_bytes_conservative":100,"description_characters":4000},
+  "google_play_limits": {"name_characters":30,"short_description_characters":80,"full_description_characters":4000},
+  "products": [
+    {
+      "brand":"Chromatic Breathing",
+      "apple_id":"6742974213",
+      "store_url":"https://apps.apple.com/us/app/chromatic-breathing/id6742974213",
+      "website_landing":"https://saga1001.com/apps/chromatic-breathing/",
+      "identity_status":"PUBLIC_APP_STORE_ID_VERIFIED",
+      "store_write_status":"NOT_ATTEMPTED_NO_AUTHENTICATED_STORE_CONNECTOR",
+      "locales": {
+        "en-US": {"name":"Chromatic Breathing","subtitle":"Color-guided breathing breaks","keywords":"relax,focus,mindfulness,visual,pause,calm,meditation,rhythm,wind down,box,inhale,exhale","description":"Make room for a mindful pause with Chromatic Breathing. Follow changing colors and breathing prompts, choose a rhythm, and adjust the experience to your preferences. Review the current app settings and use a pace that feels comfortable. This is a personal breathing and reflection experience, not diagnosis or treatment.","google_play_short":"Take a mindful pause with color-guided breathing and personal rhythm settings."},
+        "zh-Hans": {"name":"Chromatic Breathing","subtitle":"跟随色彩，给自己一次呼吸休息","keywords":"正念,专注,放松,冥想,视觉,节奏,暂停,自我照顾","description":"给自己留出一段正念休息。Chromatic Breathing 用颜色变化和呼吸提示呈现可视化的节奏体验。请在 App 中查看实际节奏与个性化设置，并选择舒适的使用方式。本产品用于个人呼吸与反思体验，不是诊断或治疗。此文案为商店本地化草稿，不表示 App 界面已支持中文。","google_play_short":"跟随颜色变化与呼吸提示，选择舒适的节奏，给自己一段正念休息。"}
+      },
+      "release_gates":["Verify every described setting against the submitted app build","Fix and verify actual app support/privacy destinations before submission","Do not equate localized store copy with in-app language support","Verify store edit permissions and version state","Android package/listing unverified; Play copy is draft only"]
+    },
+    {
+      "brand":"Bunny Crystal Oracle",
+      "apple_id":null,
+      "google_play_package":null,
+      "website_landing":"https://saga1001.com/products/bunny-crystal-oracle/",
+      "identity_status":"EXACT_STORE_ID_NOT_VERIFIED_IN_THIS_RUN",
+      "store_write_status":"NOT_ATTEMPTED",
+      "locales": {
+        "en-US": {"name":"Bunny Crystal Oracle","subtitle":"Original cards for reflection","keywords":"journal,ritual,insight,self care,feelings,relationships,daily prompt,symbols,intention","description":"Begin with a question and explore original crystal-oracle imagery. Bunny Crystal Oracle offers a starting point for noticing feelings, reflecting on relationships and recording your own interpretation. Treat each symbol as a perspective, not a prediction or someone else's answer. Review the actual product for available features and any paid content.","google_play_short":"Explore original crystal oracle cards and prompts for personal reflection."},
+        "zh-Hans": {"name":"Bunny Crystal Oracle","subtitle":"原创神谕卡，记录感受与关系","keywords":"水晶,神谕,卡牌,自我反思,关系,情绪,日记,仪式","description":"从一个问题开始，探索原创水晶神谕意象。Bunny Crystal Oracle 为感受记录、关系反思和个人解读提供一个起点。把符号当成观察视角，不当成确定预测或他人的答案。可用功能与付费内容请以实际产品为准。","google_play_short":"从原创水晶神谕卡出发，整理自己的问题、感受与关系。"}
+      },
+      "release_gates":["Resolve the exact owned App Store and Google Play product IDs","Validate the submitted binary's actual functionality and screenshots","Check account/version eligibility before editing","No medical efficacy, mind-reading or prediction guarantees"]
+    }
+  ]
+}

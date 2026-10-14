@@ -1,0 +1,7 @@
+{
+  "name":"saga1001-discovery",
+  "private":true,
+  "type":"module",
+  "scripts":{"build:discovery":"node discovery/build.mjs && node discovery/refine.mjs","test:discovery":"node discovery/test.mjs && node discovery/validate-aso.mjs"},
+  "engines":{"node":">=20"}
+}

@@ -1,0 +1,40 @@
+name: Build search-ready pages
+on:
+  push:
+    branches: [saga/discovery-2026-10-14]
+    paths: ['discovery/**', '.github/workflows/build-discovery.yml', 'app.js', 'press.mjs', 'package.json']
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: discovery-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  render:
+    if: github.ref == 'refs/heads/saga/discovery-2026-10-14'
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          ref: ${{ github.ref_name }}
+      - name: Build ordinary static HTML
+        run: npm run build:discovery
+      - name: Capture the actual homepage sharing preview
+        run: |
+          npm install --no-save --package-lock=false --no-audit --no-fund playwright@1.64.0
+          npx playwright install --with-deps chromium
+          sudo apt-get install -y fonts-noto-cjk
+          node discovery/render-preview.mjs
+      - name: Validate pages and conservative store-field drafts
+        run: npm run test:discovery
+      - name: Commit generated files on the review branch only
+        env:
+          TARGET_BRANCH: ${{ github.ref_name }}
+        run: |
+          node -e "const fs=require('fs'),cp=require('child_process');const files=JSON.parse(fs.readFileSync('discovery/generated-files.json'));cp.execFileSync('git',['add','--',...files]);"
+          if git diff --cached --quiet; then exit 0; fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'build(discovery): render validated HTML, sharing preview and crawl resources'
+          git push origin "HEAD:$TARGET_BRANCH"

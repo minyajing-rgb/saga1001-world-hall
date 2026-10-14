@@ -1,0 +1,11 @@
+# Public search access. Existing model-training policy is not changed by this search configuration.
+User-agent: *
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+Sitemap: https://saga1001.com/sitemap.xml

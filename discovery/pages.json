@@ -1,0 +1,381 @@
+{
+  "updated": "2026-10-14",
+  "origin": "https://saga1001.com",
+  "pages": [
+    {
+      "path": "/",
+      "url": "https://saga1001.com/",
+      "title": "SAGA1001｜水晶神谕、关系反思与梦境探索",
+      "description": "SAGA1001 世界大厅连接 Bunny 水晶神谕卡、PLOT 关系反思、DreamPlot 梦境记录、佛典、圣经与自然探索。查看独立产品、来源和真实项目动态。",
+      "language": "zh",
+      "keywords": [
+        "SAGA1001",
+        "消费AI",
+        "身心灵探索",
+        "水晶神谕",
+        "关系反思",
+        "梦境记录"
+      ],
+      "file": "index.html"
+    },
+    {
+      "path": "/products/",
+      "url": "https://saga1001.com/products/",
+      "title": "SAGA1001 产品目录｜神谕、关系、梦境与文化探索",
+      "description": "浏览六个 SAGA 独立产品的用途和官方网站：原创水晶神谕卡、关系反思、梦境记录、佛典、圣经与自然文化。",
+      "language": "zh",
+      "keywords": [
+        "SAGA1001 products",
+        "水晶神谕",
+        "关系反思",
+        "dream journal"
+      ],
+      "file": "products/index.html"
+    },
+    {
+      "path": "/products/bunny-crystal-oracle/",
+      "url": "https://saga1001.com/products/bunny-crystal-oracle/",
+      "title": "Bunny Crystal Oracle｜原创水晶神谕卡与自我反思",
+      "description": "了解 Bunny Crystal Oracle 的原创水晶神谕卡、象征性提问与自我反思方向，找到独立官方网站并查看真实体验边界。",
+      "language": "zh",
+      "keywords": [
+        "Bunny Crystal Oracle",
+        "水晶神谕卡",
+        "原创神谕卡",
+        "crystal oracle cards",
+        "oracle reflection",
+        "self reflection"
+      ],
+      "file": "products/bunny-crystal-oracle/index.html"
+    },
+    {
+      "path": "/products/plot/",
+      "url": "https://saga1001.com/products/plot/",
+      "title": "PLOT｜关系反思、情绪记录与沟通整理",
+      "description": "PLOT 帮助你从关系中的疑问出发，整理事实、感受与想表达的话。查看产品定位、使用边界及 PLOT 独立网站。",
+      "language": "zh",
+      "keywords": [
+        "PLOT",
+        "关系反思",
+        "关系解读",
+        "情绪记录",
+        "relationship reflection",
+        "communication journal"
+      ],
+      "file": "products/plot/index.html"
+    },
+    {
+      "path": "/products/dreamplot/",
+      "url": "https://saga1001.com/products/dreamplot/",
+      "title": "DreamPlot 梦频日记｜梦境记录与个人反思",
+      "description": "探索 DreamPlot 与《梦频日记》的梦境记录、个人叙事和回看方向。前往独立作品页面了解试读、消息预约与最新发行状态。",
+      "language": "zh",
+      "keywords": [
+        "DreamPlot",
+        "梦频日记",
+        "梦境记录",
+        "梦境日记",
+        "dream journal",
+        "dream recording",
+        "dream reflection"
+      ],
+      "file": "products/dreamplot/index.html"
+    },
+    {
+      "path": "/products/dharma-atlas/",
+      "url": "https://saga1001.com/products/dharma-atlas/",
+      "title": "Dharma Atlas｜佛典、佛教人物与文化探索",
+      "description": "通过 Dharma Atlas 探索佛典、佛教人物、地点与文化线索。了解原典、版本、历史背景和诠释之间的区别，再进入独立知识站。",
+      "language": "zh",
+      "keywords": [
+        "Dharma Atlas",
+        "佛典",
+        "佛教文化",
+        "佛教人物",
+        "Buddhist texts",
+        "Buddhist culture"
+      ],
+      "file": "products/dharma-atlas/index.html"
+    },
+    {
+      "path": "/products/from-john-to-jesus/",
+      "url": "https://saga1001.com/products/from-john-to-jesus/",
+      "title": "From John to Jesus｜圣经故事、人物与文本探索",
+      "description": "从约翰到耶稣，沿着圣经文本、人物与视觉故事探索信仰和文明。查看 From John to Jesus 的独立网站及内容阅读边界。",
+      "language": "zh",
+      "keywords": [
+        "From John to Jesus",
+        "从约翰到耶稣",
+        "圣经故事",
+        "圣经人物",
+        "Bible study",
+        "Bible stories"
+      ],
+      "file": "products/from-john-to-jesus/index.html"
+    },
+    {
+      "path": "/products/earth-healing/",
+      "url": "https://saga1001.com/products/earth-healing/",
+      "title": "Earth Healing｜自然、植物与身心灵文化探索",
+      "description": "Earth Healing 探索自然、植物与不同地域的身体文化。了解自然观察和个人反思方向，并区分传统用法、个人体验与现代证据。",
+      "language": "zh",
+      "keywords": [
+        "Earth Healing",
+        "自然探索",
+        "植物观察",
+        "身心灵文化",
+        "nature reflection",
+        "plant observation"
+      ],
+      "file": "products/earth-healing/index.html"
+    },
+    {
+      "path": "/about/",
+      "url": "https://saga1001.com/about/",
+      "title": "关于 SAGA1001 与 Joyce｜独立消费体验与知识探索",
+      "description": "SAGA1001 世界大厅连接 Bunny 水晶神谕卡、PLOT 关系反思、DreamPlot 梦境记录、佛典、圣经与自然探索。查看独立产品、来源和真实项目动态。",
+      "language": "zh",
+      "keywords": [],
+      "file": "about/index.html"
+    },
+    {
+      "path": "/press/",
+      "url": "https://saga1001.com/press/",
+      "title": "SAGA1001 媒体动态｜项目入选与创始人行业记录",
+      "description": "查看 SAGA/Bunny 的项目入选和 Joyce 的创始人行业记录，明确区分提交收件、项目入选、入围与获奖。",
+      "language": "zh",
+      "keywords": [],
+      "file": "press/index.html"
+    },
+    {
+      "path": "/press/wmf-soft-landing-2027/",
+      "url": "https://saga1001.com/press/wmf-soft-landing-2027/",
+      "title": "SAGA / Bunny 入选 WMF 2027 Soft Landing | SAGA1001",
+      "description": "创始人主导的 SAGA / Bunny 项目收到主办方入选通知，开启与国际创新生态的进一步交流。",
+      "language": "zh",
+      "keywords": [],
+      "file": "press/wmf-soft-landing-2027/index.html"
+    },
+    {
+      "path": "/media-kit/",
+      "url": "https://saga1001.com/media-kit/",
+      "title": "SAGA1001 媒体资料包｜品牌简介、项目进展与联系",
+      "description": "阅读或下载 SAGA1001 中英文品牌文字、带归属的项目进展及媒体联系，无需注册。",
+      "language": "zh",
+      "keywords": [],
+      "file": "media-kit/index.html"
+    },
+    {
+      "path": "/partners/",
+      "url": "https://saga1001.com/partners/",
+      "title": "与 SAGA1001 合作｜消费产品、原创 IP 与知识内容",
+      "description": "探索 SAGA 在独立消费体验、产品发行、原创内容、研究问题与行业活动上的合作方向。",
+      "language": "zh",
+      "keywords": [],
+      "file": "partners/index.html"
+    },
+    {
+      "path": "/apps/chromatic-breathing/",
+      "url": "https://saga1001.com/apps/chromatic-breathing/",
+      "title": "Chromatic Breathing｜色彩引导呼吸 App",
+      "description": "了解 Chromatic Breathing 色彩引导呼吸 App，并通过已核实的 Apple App Store 页面查看 iPhone、iPad 版本及实际信息。",
+      "language": "zh",
+      "keywords": [
+        "Chromatic Breathing",
+        "色彩呼吸",
+        "呼吸练习",
+        "breathing app",
+        "color breathing",
+        "mindfulness break"
+      ],
+      "file": "apps/chromatic-breathing/index.html"
+    },
+    {
+      "path": "/en/",
+      "url": "https://saga1001.com/en/",
+      "title": "SAGA1001 | Crystal Oracle, Reflection & Dream Exploration",
+      "description": "Explore Bunny Crystal Oracle, PLOT relationship reflection, DreamPlot dream recording, Buddhist texts, Bible study and nature with SAGA1001.",
+      "language": "en",
+      "keywords": [
+        "SAGA1001",
+        "consumer AI",
+        "crystal oracle",
+        "relationship reflection",
+        "dream recording"
+      ],
+      "file": "en/index.html"
+    },
+    {
+      "path": "/en/products/",
+      "url": "https://saga1001.com/en/products/",
+      "title": "SAGA1001 Products | Oracle, Relationships, Dreams & Culture",
+      "description": "Compare six independent SAGA products, their purpose and official websites. Discover original crystal oracle cards, relationship reflection, dream records and cultural knowledge.",
+      "language": "en",
+      "keywords": [
+        "SAGA1001 products",
+        "水晶神谕",
+        "关系反思",
+        "dream journal"
+      ],
+      "file": "en/products/index.html"
+    },
+    {
+      "path": "/en/products/bunny-crystal-oracle/",
+      "url": "https://saga1001.com/en/products/bunny-crystal-oracle/",
+      "title": "Bunny Crystal Oracle | Original Cards & Self-Reflection",
+      "description": "Discover Bunny Crystal Oracle, original crystal-oracle imagery and prompts for self-reflection. Find its independent website and understand the experience.",
+      "language": "en",
+      "keywords": [
+        "Bunny Crystal Oracle",
+        "水晶神谕卡",
+        "原创神谕卡",
+        "crystal oracle cards",
+        "oracle reflection",
+        "self reflection"
+      ],
+      "file": "en/products/bunny-crystal-oracle/index.html"
+    },
+    {
+      "path": "/en/products/plot/",
+      "url": "https://saga1001.com/en/products/plot/",
+      "title": "PLOT | Relationship Reflection & Communication",
+      "description": "Explore PLOT for relationship reflection: organise what happened, how you feel and what you want to communicate. Find the independent product website.",
+      "language": "en",
+      "keywords": [
+        "PLOT",
+        "关系反思",
+        "关系解读",
+        "情绪记录",
+        "relationship reflection",
+        "communication journal"
+      ],
+      "file": "en/products/plot/index.html"
+    },
+    {
+      "path": "/en/products/dreamplot/",
+      "url": "https://saga1001.com/en/products/dreamplot/",
+      "title": "DreamPlot | Dream Recording & Personal Reflection",
+      "description": "Explore DreamPlot and Dream Frequency Diary through dream records, personal stories and reflection. Visit the independent book page for excerpts and release status.",
+      "language": "en",
+      "keywords": [
+        "DreamPlot",
+        "梦频日记",
+        "梦境记录",
+        "梦境日记",
+        "dream journal",
+        "dream recording",
+        "dream reflection"
+      ],
+      "file": "en/products/dreamplot/index.html"
+    },
+    {
+      "path": "/en/products/dharma-atlas/",
+      "url": "https://saga1001.com/en/products/dharma-atlas/",
+      "title": "Dharma Atlas | Buddhist Texts, People & Culture",
+      "description": "Explore Buddhist texts, people, places and cultural context with Dharma Atlas. Distinguish primary texts, versions and interpretation before visiting the knowledge site.",
+      "language": "en",
+      "keywords": [
+        "Dharma Atlas",
+        "佛典",
+        "佛教文化",
+        "佛教人物",
+        "Buddhist texts",
+        "Buddhist culture"
+      ],
+      "file": "en/products/dharma-atlas/index.html"
+    },
+    {
+      "path": "/en/products/from-john-to-jesus/",
+      "url": "https://saga1001.com/en/products/from-john-to-jesus/",
+      "title": "From John to Jesus | Bible Stories & Text Exploration",
+      "description": "Follow Bible texts, people and visual stories with From John to Jesus. Explore the independent site and distinguish narrative, sources and interpretation.",
+      "language": "en",
+      "keywords": [
+        "From John to Jesus",
+        "从约翰到耶稣",
+        "圣经故事",
+        "圣经人物",
+        "Bible study",
+        "Bible stories"
+      ],
+      "file": "en/products/from-john-to-jesus/index.html"
+    },
+    {
+      "path": "/en/products/earth-healing/",
+      "url": "https://saga1001.com/en/products/earth-healing/",
+      "title": "Earth Healing | Nature, Plants & Cultural Reflection",
+      "description": "Explore nature, plants and body cultures with Earth Healing. Discover nature observation and reflection while distinguishing tradition, experience and evidence.",
+      "language": "en",
+      "keywords": [
+        "Earth Healing",
+        "自然探索",
+        "植物观察",
+        "身心灵文化",
+        "nature reflection",
+        "plant observation"
+      ],
+      "file": "en/products/earth-healing/index.html"
+    },
+    {
+      "path": "/en/about/",
+      "url": "https://saga1001.com/en/about/",
+      "title": "About SAGA1001 & Joyce | Independent Consumer Experiences",
+      "description": "Explore Bunny Crystal Oracle, PLOT relationship reflection, DreamPlot dream recording, Buddhist texts, Bible study and nature with SAGA1001.",
+      "language": "en",
+      "keywords": [],
+      "file": "en/about/index.html"
+    },
+    {
+      "path": "/en/press/",
+      "url": "https://saga1001.com/en/press/",
+      "title": "SAGA1001 Press | Programme Selection & Founder Updates",
+      "description": "Read attributed SAGA/Bunny programme milestones and Joyce’s founder entries. Submission receipts, selection and awards are clearly distinguished.",
+      "language": "en",
+      "keywords": [],
+      "file": "en/press/index.html"
+    },
+    {
+      "path": "/en/press/wmf-soft-landing-2027/",
+      "url": "https://saga1001.com/en/press/wmf-soft-landing-2027/",
+      "title": "SAGA / Bunny selected for WMF 2027 Soft Landing | SAGA1001",
+      "description": "The founder-led SAGA / Bunny project received an organiser selection notice, opening a new connection with the international innovation community.",
+      "language": "en",
+      "keywords": [],
+      "file": "en/press/wmf-soft-landing-2027/index.html"
+    },
+    {
+      "path": "/en/media-kit/",
+      "url": "https://saga1001.com/en/media-kit/",
+      "title": "SAGA1001 Media Kit | Brand, Milestones & Contact",
+      "description": "Read or download SAGA1001’s bilingual media text, attributed milestones and media contact. No account is required.",
+      "language": "en",
+      "keywords": [],
+      "file": "en/media-kit/index.html"
+    },
+    {
+      "path": "/en/partners/",
+      "url": "https://saga1001.com/en/partners/",
+      "title": "Work with SAGA1001 | Consumer Products, IP & Knowledge",
+      "description": "Explore SAGA collaboration in consumer experiences, product distribution, original content, research questions and industry events.",
+      "language": "en",
+      "keywords": [],
+      "file": "en/partners/index.html"
+    },
+    {
+      "path": "/en/apps/chromatic-breathing/",
+      "url": "https://saga1001.com/en/apps/chromatic-breathing/",
+      "title": "Chromatic Breathing | Color-Guided Breathing App",
+      "description": "Discover Chromatic Breathing, a color-guided breathing app, and open its verified Apple App Store listing for iPhone and iPad details.",
+      "language": "en",
+      "keywords": [
+        "Chromatic Breathing",
+        "色彩呼吸",
+        "呼吸练习",
+        "breathing app",
+        "color breathing",
+        "mindfulness break"
+      ],
+      "file": "en/apps/chromatic-breathing/index.html"
+    }
+  ]
+}
