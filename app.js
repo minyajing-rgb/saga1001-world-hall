@@ -52,8 +52,28 @@ function bottomNav(current){
 function footer(){return `<footer class="footer"><div><strong>SAGA1001</strong><span>AI for a more conscious, kinder, and more alive humanity.</span></div><p>Different paths · One home · A kinder world · A brighter you</p><small>© ${new Date().getFullYear()} SAGA1001</small></footer>`;}
 function home(){return `<div class="page home-page">
  <main>
-  <section class="v21-hero" aria-label="SAGA1001 世界大厅">${topbar()}
-   <div class="v21-hero-grid"><div class="v21-hero-copy"><p class="section-kicker">A UNIVERSE, ONE QUESTION AWAY ✦</p><h1>一个问题，<br><span>打开一个世界。</span></h1><p>探索关系、心灵、信仰、文明与自然。在这里，一个问题可以通向真实工具、有来源的知识和今天就能做的小行动。</p><form class="hero-question"><input name="question" aria-label="今天想探索什么" placeholder="今天想探索什么？" required/><button type="submit">开始探索 ↗</button></form><div class="hero-prompt-list"><button data-hero-prompt="我想聊聊关系与情绪">关系与情绪</button><button data-hero-prompt="我想抽一张神谕卡">抽一张牌</button><button data-hero-prompt="我想放松一下">想放松</button></div><p class="hero-honesty">SAGA 问问目前提供预览式回答；每个产品在独立网站继续体验。</p></div><div class="v21-orb-wrap" aria-hidden="true"><div class="v21-orb"><span>✦</span></div></div></div>
+  <section class="v21-hero saga-hero-refresh" aria-label="SAGA1001 世界大厅">${topbar()}
+   <div class="v21-hero-grid">
+    <div class="v21-hero-copy">
+     <p class="section-kicker"><span class="hero-kicker-star" aria-hidden="true">✦</span> A UNIVERSE, ONE QUESTION AWAY</p>
+     <h1>一个问题，<br><span>打开一个世界。</span></h1>
+     <p class="hero-lede"><span class="hero-desktop-text">关于关系、心灵、信仰与自然。<br>从今天的好奇出发，找到一款工具、一段知识，<br class="hero-wide-break">或一个此刻就能做的小行动。</span><span class="hero-mobile-text">从关系、心灵到文明与自然，<br>让一个问题，通向今天的小行动。</span></p>
+     <form class="hero-question"><input name="question" aria-label="今天想探索什么" placeholder="今天，想探索什么？" required/><button type="submit">开始探索 <span aria-hidden="true">↗</span></button></form>
+     <div class="hero-prompt-list" aria-label="从一个问题开始"><button data-hero-prompt="我想聊聊关系与情绪">关系与情绪 <span aria-hidden="true">↗</span></button><button data-hero-prompt="我想抽一张神谕卡">抽一张牌 <span aria-hidden="true">↗</span></button><button data-hero-prompt="我想放松一下">想放松 <span aria-hidden="true">↗</span></button></div>
+     <p class="hero-honesty"><span class="hero-desktop-text">SAGA 问问目前提供预览式回答；每个产品在独立网站继续体验。</span><span class="hero-mobile-text">问问为体验预览；产品在各自官网继续。</span></p>
+    </div>
+    <div class="saga-portal">
+     <div class="portal-orbit portal-orbit-one" aria-hidden="true"></div><div class="portal-orbit portal-orbit-two" aria-hidden="true"></div>
+     <span class="portal-spark portal-spark-one" aria-hidden="true">✦</span><span class="portal-spark portal-spark-two" aria-hidden="true">✧</span>
+     <figure class="portal-window"><img src="./assets/world-hall-hero.jpg" alt="想象中的世界大厅：云端城堡、星光与瀑布，象征不同的探索方向" width="1672" height="941" fetchpriority="high" decoding="async"></figure>
+     <a class="portal-tag portal-tag-relationship" href="https://plot.saga1001.com/" target="_blank" rel="noopener noreferrer" aria-label="看懂关系，打开 PLOT 官方网站（新窗口）"><span class="portal-tag-icon" aria-hidden="true">♡</span><span><small>PLOT</small><strong>看懂关系 <b aria-hidden="true">↗</b></strong></span></a>
+     <a class="portal-tag portal-tag-dream" href="https://dreamplot.saga1001.com/book" target="_blank" rel="noopener noreferrer" aria-label="记住一个梦，打开 DreamPlot（新窗口）"><span class="portal-tag-icon" aria-hidden="true">☾</span><span><small>DREAMPLOT</small><strong>记住一个梦 <b aria-hidden="true">↗</b></strong></span></a>
+     <a class="portal-tag portal-tag-wisdom" href="https://dharma.saga1001.com/" target="_blank" rel="noopener noreferrer" aria-label="从经典开始，打开 Dharma Atlas（新窗口）"><span class="portal-tag-icon" aria-hidden="true">✧</span><span><small>DHARMA ATLAS</small><strong>从经典开始 <b aria-hidden="true">↗</b></strong></span></a>
+     <a class="portal-product" href="https://bunny.saga1001.com/" target="_blank" rel="noopener noreferrer" aria-label="打开 Bunny Crystal Oracle 水晶神谕卡官方网站（新窗口）"><img src="./assets/product-bunny.jpg" alt="Bunny Crystal Oracle 产品网站预览" width="840" height="520" decoding="async"><span class="portal-product-copy"><small>一点日常灵感</small><strong>Bunny Crystal Oracle</strong><span>抽一张牌 <b aria-hidden="true">↗</b></span></span></a>
+     <p class="portal-caption">STAY CURIOUS. <span>让好奇，有处可去。</span></p>
+    </div>
+   </div>
+   <div class="hero-products"><div class="hero-products-heading"><p>从一个产品开始</p><a href="#/products">探索全部产品 <span aria-hidden="true">↗</span></a></div><nav class="hero-product-grid" aria-label="六个独立产品入口">${shortcuts.map(p=>`<a class="hero-product-link" href="${p.href}" target="_blank" rel="noopener noreferrer" aria-label="打开 ${p.name} 官方网站（新窗口）"><span class="hero-product-thumb"><img src="./assets/product-${p.id}.jpg" alt="" width="840" height="520" loading="lazy" decoding="async"></span><span class="hero-product-name"><strong>${p.name}</strong><small>${p.caption}</small></span><span class="hero-product-arrow" aria-hidden="true">↗</span></a>`).join('')}</nav></div>
   </section>
   <section id="discover" class="v21-worlds"><p class="section-kicker">01 · EXPLORE YOUR WORLDS</p><h2>六个可进入的世界。<br><span>从你关心的事开始。</span></h2><p class="v21-section-copy">每个入口都通往已经可访问的 SAGA1001 独立产品网站。</p><div class="world-grid brand-world-grid">${shortcuts.map(brandCard).join('')}</div><a class="v21-text-link" href="#/products">查看全部产品入口 →</a></section>
   <section class="v21-vision"><p class="section-kicker">02 · A KINDER WORLD</p><h2>把世界的多种解释，<br>变成可以探索的体验。</h2><p>带着问题进入产品，也带着自己的判断回到生活。每个世界都保有自己的视觉、内容与体验。</p><a class="btn primary" href="#/about">了解 SAGA1001 →</a></section>

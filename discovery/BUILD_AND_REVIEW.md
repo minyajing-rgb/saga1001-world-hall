@@ -1,5 +1,13 @@
 # Current build and review procedure
 
+## Homepage hero refresh — 2026-10-21
+
+The current hero combines the cream/aurora interface with the repository's existing world-hall scene, a real Bunny product screenshot and six existing product destinations. It is a new reconciliation of two historical design directions, not a claim that the original concept board was the final approved interface. See [the comparison and validation record](../docs/hero-review-2026-10-21/README.md).
+
+The current social preview is `assets/saga1001-search-preview-20261021.jpg`, captured from the actual 1200×630 homepage. The original scene remains `assets/world-hall-hero.jpg`; it is used inside the interface, not as the standalone share image. Run the existing build and test commands below; regenerate the preview after visible hero changes. The 2026-10-21 checks are recorded separately from the older, broader 2026-10-14 validation below.
+
+## Existing generation workflow
+
 Use the following sequence (this supersedes the earlier abbreviated README commands):
 
 ```sh
@@ -10,7 +18,7 @@ node discovery/render-preview.mjs
 npm run test:discovery
 ```
 
-A system CJK font is needed for the Chinese homepage social preview. The branch workflow installs it on its ephemeral runner. No font files are distributed. The generated1200×630 JPEG is a real screenshot of the approved cream/aurora homepage, not the older fantasy-world concept asset. Existing original artwork is not deleted.
+A system CJK font is needed for the Chinese homepage social preview. The branch workflow installs it on its ephemeral runner. No font files are distributed. The generated 1200×630 JPEG is a screenshot of the actual homepage. Existing original artwork is not deleted.
 
 The root and27 companion pages contain ordinary visible HTML for all visitors, including browsers with scripting disabled. The search-ready pages are not served selectively by user agent. Product pages have their own intent, official product destination, context and questions, not a copied keyword block.
 
