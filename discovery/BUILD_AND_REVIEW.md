@@ -1,10 +1,25 @@
 # Current build and review procedure
 
-## Homepage hero refresh — 2026-10-21
+## Current implementation: World Hall V2 — 2026-10-21
 
-The current hero combines the cream/aurora interface with the repository's existing world-hall scene, a real Bunny product screenshot and six existing product destinations. It is a new reconciliation of two historical design directions, not a claim that the original concept board was the final approved interface. See [the comparison and validation record](../docs/hero-review-2026-10-21/README.md).
+This revision follows the user's supplied World Hall blueprint. The original `assets/world-hall-hero.jpg` now fills the panoramic hero, with overlaid navigation, the two-line “A Kinder World / A Brighter You” heading, two primary actions and eight circular world entrances. Mobile shows four quick entrances, a link to all eight worlds, a Daily Inspiration card and the five-item bottom navigation. The six existing product identities and destinations remain available below the world directory.
 
-The current social preview is `assets/saga1001-search-preview-20261021.jpg`, captured from the actual 1200×630 homepage. The original scene remains `assets/world-hall-hero.jpg`; it is used inside the interface, not as the standalone share image. Run the existing build and test commands below; regenerate the preview after visible hero changes. The 2026-10-21 checks are recorded separately from the older, broader 2026-10-14 validation below.
+The eight themes are Portal, Bunny, Buddhism, Bible, Tarot, Astrology, Healing and Garden. New `#/realm/*` routes connect them to existing experiences; Astrology opens the verified `https://astro.saga1001.com/` destination. The old Discovery redirect for `#/worlds` was removed. Chat, Bunny, Community, Me and Search now use the matching interface. Chat retains clearly labelled scripted preview responses. Community provides content and project-update browsing while interaction features are being prepared; Me provides exploration links while a shared account remains in preparation.
+
+### Validation for this revision
+
+- Static SEO checks passed for 28 pages, 392 metadata assertions, 14 language pairs and 28 sitemap URLs. Existing ASO draft-field checks also passed. The generated homepage hero matches the runtime source after the same link conversion.
+- A read-only VM check rendered 15 routes without errors, missing image assets or missing section anchors: home, Worlds, eight realms, Me, Search, Chat, Community and Library.
+- Three mobile issues were corrected: Search was added to the menu; bottom-navigation links explicitly use a centered vertical layout through 767px; companion-page mobile styling was extended to 767px with explicit header alignment and bottom-navigation clearance.
+- Browser checks covered widths of 360, 390, 720 and 768px. Searching for “Bunny” returned one world and one product; a Chat starter button produced its scripted reply; selecting Community “Latest” changed the displayed content. These are the checks for this revision; the larger historical matrix below belongs to the earlier source.
+
+The current sharing preview is `assets/saga1001-worldhall-v2-preview-20261021.jpg`, captured at 1200×800 from the actual rendered page in the managed browser preview. This taller viewport retains the complete world-entrance row. Open Graph and Twitter metadata use this versioned file. The earlier `assets/saga1001-search-preview-20261021.jpg` remains as historical artwork.
+
+## Historical homepage hero refresh — earlier on 2026-10-21
+
+The earlier hero combined the cream/aurora interface with the repository's existing world-hall scene, a real Bunny product screenshot and six existing product destinations. It reconciled two historical design directions. The user's subsequent blueprint instruction is implemented in the current revision above. The earlier [comparison and validation record](../docs/hero-review-2026-10-21/README.md) is retained as history.
+
+The sharing preview recorded for that earlier pass is `assets/saga1001-search-preview-20261021.jpg`, captured from its actual 1200×630 homepage. The original scene remains `assets/world-hall-hero.jpg`. Run the existing build and test commands below when regenerating pages and the preview. The 2026-10-21 checks are separate from the older, broader 2026-10-14 validation below.
 
 ## Existing generation workflow
 
@@ -18,7 +33,7 @@ node discovery/render-preview.mjs
 npm run test:discovery
 ```
 
-A system CJK font is needed for the Chinese homepage social preview. The branch workflow installs it on its ephemeral runner. No font files are distributed. The generated 1200×630 JPEG is a screenshot of the actual homepage. Existing original artwork is not deleted.
+A system CJK font is needed for the Chinese homepage social preview. The branch workflow installs it on its ephemeral runner. No font files are distributed. The generated 1200×800 JPEG is a screenshot of the actual homepage. Existing original artwork is not deleted.
 
 The root and27 companion pages contain ordinary visible HTML for all visitors, including browsers with scripting disabled. The search-ready pages are not served selectively by user agent. Product pages have their own intent, official product destination, context and questions, not a copied keyword block.
 

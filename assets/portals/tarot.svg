@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-labelledby="title">
+<title id="title">Tarot · violet cards and celestial symbols</title>
+<defs>
+ <radialGradient id="sky" cx="40%" cy="30%" r="75%"><stop stop-color="#bb99ed"/><stop offset=".54" stop-color="#6343a6"/><stop offset="1" stop-color="#28225e"/></radialGradient>
+ <linearGradient id="glass" x1="0" y1="0" x2=".8" y2="1"><stop stop-color="#fff" stop-opacity=".62"/><stop offset=".48" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#bdc5ff" stop-opacity=".18"/></linearGradient>
+ <linearGradient id="rim" x1="0" y1="0" x2=".9" y2="1"><stop stop-color="#fff"/><stop offset=".45" stop-color="#dbeaff"/><stop offset=".73" stop-color="#a9b7e0"/><stop offset="1" stop-color="#fff"/></linearGradient>
+ <radialGradient id="haze"><stop stop-color="#fff" stop-opacity=".48"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient>
+ <clipPath id="round"><circle cx="50" cy="50" r="46"/></clipPath>
+ 
+</defs>
+<circle cx="50" cy="50" r="48" fill="#28225e" stroke="url(#rim)" stroke-width="2.8"/>
+<g clip-path="url(#round)">
+ <circle cx="50" cy="50" r="46" fill="url(#sky)"/>
+ <ellipse cx="42" cy="26" rx="37" ry="25" fill="url(#haze)"/>
+ 
+ <circle cx="50" cy="48" r="31" fill="none" stroke="#c9b0f2" stroke-width=".8" opacity=".6"/>
+ <circle cx="50" cy="48" r="26" fill="none" stroke="#c9b0f2" stroke-width=".4" opacity=".5"/>
+ <g transform="rotate(-17 38 54)"><rect x="22" y="29" width="30" height="49" rx="4" fill="#8b6bb9" stroke="#dab9f0" stroke-width="1.1"/><rect x="26" y="33" width="22" height="41" rx="2" fill="none" stroke="#c6a4df" stroke-width=".8"/></g>
+ <g transform="rotate(16 63 54)"><rect x="47" y="29" width="30" height="49" rx="4" fill="#7a5bae" stroke="#e0c5f1" stroke-width="1.1"/><rect x="51" y="33" width="22" height="41" rx="2" fill="none" stroke="#c6a4df" stroke-width=".8"/></g>
+ <rect x="34" y="22" width="33" height="55" rx="4" fill="#39266d" stroke="#efd3f7" stroke-width="1.5"/>
+ <rect x="38" y="26" width="25" height="47" rx="2" fill="none" stroke="#ba91d5" stroke-width=".8"/>
+ <path d="M51 33L54 43L61 47L54 50L51 61L47 51L41 47L47 43Z" fill="#fff0c9"/>
+ <path d="M51 33L51 47L47 43ZM51 61L51 47L54 50Z" fill="#dbaadf"/>
+ <circle cx="50.5" cy="47.5" r="12.5" fill="none" stroke="#dbb7ea" stroke-width=".65"/>
+ <path d="M52 65A4 4 0 1 0 56 69A4.7 4.7 0 0 1 52 65Z" fill="#f5d6e8"/>
+ <g fill="#ffe9e6"><circle cx="26" cy="20" r="1"/><circle cx="77" cy="45" r="1.2"/><circle cx="20" cy="58" r="1"/><circle cx="78" cy="72" r="1.1"/><circle cx="57" cy="15" r=".8"/></g>
+
+ <path d="M11 32C22 7 56 1 80 20C59 8 27 15 11 32Z" fill="#fff" opacity=".22"/>
+ <circle cx="50" cy="50" r="45.4" fill="none" stroke="#fff" stroke-opacity=".2" stroke-width="1"/>
+</g>
+<circle cx="50" cy="50" r="46.6" fill="none" stroke="url(#glass)" stroke-width="1.1"/>
+</svg>

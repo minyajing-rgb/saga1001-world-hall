@@ -1,0 +1,191 @@
+/* The World Hall's companion pages: soft lavender, navy type and clear actions. */
+.wh-app-page,.wh-product-page{color:#14204b;background:radial-gradient(ellipse at 50% 0,#ecebff 0,transparent 55%),#fafbff}
+.wh-app-page .brand,.wh-product-page .brand{color:#17234f;background:none;-webkit-text-fill-color:currentColor;font-weight:700;letter-spacing:-.055em}
+.wh-app-page .topbar,.wh-product-page .topbar{background:#ffffffb8;border-bottom:1px solid #ececf6;box-shadow:none}
+.wh-app-page .topbar .tiny-icon,.wh-product-page .topbar .tiny-icon{color:#38477c;background:#eeedfa}
+.wh-app-page a:focus-visible,.wh-app-page button:focus-visible,.wh-product-page a:focus-visible,.wh-product-page button:focus-visible{outline:3px solid #9c88e3;outline-offset:4px}
+.wh-app-page .mobile-app-head,.wh-product-page .mobile-app-head{background:#fafaffd9;border-bottom:1px solid #ededf7;box-shadow:none}
+.wh-app-page .mobile-app-head>a,.wh-product-page .mobile-app-head>a{display:flex;align-items:center;justify-content:center;width:44px;height:44px;font-size:27px}
+.wh-app-page .mobile-app-head strong,.wh-product-page .mobile-app-head strong{display:flex;align-items:center;gap:7px;font-size:17px;font-weight:650;letter-spacing:-.025em}
+.wh-head-link svg{width:19px;height:19px}
+.wh-brand-spark{font-size:25px;color:#544d9a}
+.wh-preview-pill{display:inline-flex;align-items:center;gap:5px;border:1px solid #e6e3f6;background:#f5f3fd;border-radius:999px;padding:5px 10px;color:#7c72a0;font-size:10px;line-height:1.3;letter-spacing:.02em}
+.wh-chat-main{max-width:650px;min-height:calc(100svh - 72px);padding:40px 28px 24px}
+.wh-chat-page .chat-welcome{margin:auto 0 27px;width:100%;text-align:center}
+.wh-chat-page .wh-saga-avatar{width:64px;height:64px;margin:0 auto 25px;display:grid;place-items:center;border:2px solid #fff;border-radius:50%;background:linear-gradient(145deg,#a0bce9aa,#7667b6cc),url('/assets/world-hall-hero.jpg') 60% 42%/300%;color:#fff;box-shadow:0 0 0 1px #d5cfea,0 7px 20px #7975b329}
+.wh-chat-page .wh-saga-avatar svg{width:32px;height:32px;filter:drop-shadow(0 0 6px #ffedbc)}
+.wh-chat-page .chat-welcome h1{margin:0 0 11px;font-size:34px;line-height:1.12;font-weight:650;letter-spacing:-.045em;color:#17214e}
+.wh-chat-page .chat-welcome>p{margin:0 0 13px;color:#697294;font-size:13px;line-height:1.8;letter-spacing:.01em}
+.wh-prompt-list{display:grid;gap:9px;width:100%;max-width:320px;margin:24px auto 0}
+.wh-prompt-list button{display:flex;align-items:center;gap:11px;min-height:45px;width:100%;padding:8px 14px;background:#fff;border:1px solid #e8e7f6;border-radius:15px;box-shadow:0 3px 8px #3a328205;color:#27345c;font-size:12px;font-weight:500;text-align:left;transition:transform .18s,border-color .18s}
+.wh-prompt-list button:hover{border-color:#bdb1e9;transform:translateY(-1px)}
+.wh-prompt-symbol{display:grid;place-items:center;width:25px;height:25px;flex:0 0 25px;border-radius:8px}
+.wh-prompt-symbol svg{width:16px;height:16px}
+.wh-prompt-arrow{display:flex;margin-left:auto;color:#b4b8d0}
+.wh-prompt-arrow svg{width:12px;height:12px}
+.wh-tone-mint{color:#1eafae;background:#eafbf8}
+.wh-tone-amber{color:#d7942b;background:#fff6e8}
+.wh-tone-violet{color:#7860c5;background:#f3edfe}
+.wh-tone-lilac{color:#9a79c5;background:#f5effd}
+.wh-tone-purple{color:#9462d1;background:#f2ebfc}
+.wh-chat-page .chat-form{gap:8px;padding:8px 9px 8px 17px;min-height:60px;border:1px solid #dedff0;border-radius:18px;background:#fff;box-shadow:0 6px 20px #34418408}
+.wh-chat-page .chat-form:focus-within{border-color:#a69ad5;box-shadow:0 0 0 3px #a69ad523}
+.wh-chat-page .chat-form input{font-size:14px;min-height:42px;color:#29365f}
+.wh-chat-page .chat-form .send{display:grid;place-items:center;flex:0 0 42px;width:42px;height:42px;background:#5660a5;color:#fff;box-shadow:0 3px 8px #5660a526}
+.wh-chat-page .chat-form .send svg{width:19px;height:19px}
+.wh-chat-page .chat-note{color:#8d94ae;font-size:10px;line-height:1.7;max-width:460px;margin-top:11px}
+.wh-chat-page .chat-note a{color:#6d60a8;text-decoration:underline;text-underline-offset:2px}
+.wh-chat-session{width:100%;display:flex;align-items:center;justify-content:space-between;gap:12px;margin:0 0 25px}
+.wh-chat-session>a{font-size:11px;color:#737c9c;display:flex;align-items:center;gap:4px}
+.wh-chat-session>a svg{width:12px;height:12px}
+.wh-chat-page .message-list{gap:18px}
+.wh-chat-page .message{max-width:86%;font-size:14px;line-height:1.75;padding:14px 17px;border-radius:18px}
+.wh-chat-page .message.user{background:#616cae;border-bottom-right-radius:5px}
+.wh-chat-page .message.saga{border-color:#e8e7f3;background:#fff;border-bottom-left-radius:5px;box-shadow:0 4px 13px #34325804}
+.wh-message-name{display:block;font-size:9px;line-height:1.3;letter-spacing:.07em;margin-bottom:7px;opacity:.6}
+.wh-community-main{max-width:860px;margin:48px auto 75px;padding:0 28px}
+.wh-community-page .community-heading h1{font-size:46px;font-weight:650;letter-spacing:-.05em}
+.wh-community-page .community-heading>p:last-child{font-size:14px;color:#7983a0}
+.wh-community-tabs{gap:18px;margin-top:32px;border-color:#e2e4f1}
+.wh-community-tabs button{min-height:44px;font-size:12px;letter-spacing:.01em;padding:12px 8px;color:#7a83a1}
+.wh-community-tabs button.active{font-weight:650;color:#263565;border-bottom:2px solid #59649f}
+.wh-community-page .community-banner{min-height:300px;height:auto;position:relative;margin-top:20px;padding:42px;border-radius:20px;overflow:hidden;background:linear-gradient(90deg,#102340ad 0%,#132a4733 80%),url('/assets/world-hall-hero.jpg') center 61%/cover}
+.wh-community-page .community-banner h2{max-width:520px;margin:0 0 15px;font-size:clamp(26px,3.7vw,38px);font-weight:550;line-height:1.23;letter-spacing:-.035em;color:#fff}
+.wh-community-page .community-banner p{max-width:310px;margin:0 0 24px;font-size:13px;line-height:1.7;color:#ffffffd6}
+.wh-community-page .community-banner .btn{min-height:44px;padding:12px 19px;gap:10px;font-size:12px;font-weight:550}
+.wh-topics h2{font-size:21px;font-weight:600;letter-spacing:-.025em;margin:35px 0 18px}
+.wh-topic-link{display:flex;align-items:center;gap:14px;min-height:69px;margin:10px 0;padding:13px 17px;border:1px solid #e8e9f4;border-radius:15px;background:#fff;transition:box-shadow .18s,border-color .18s}
+.wh-topic-link:hover{border-color:#c8bde7;box-shadow:0 5px 15px #5c508209}
+.wh-topic-symbol{display:grid;place-items:center;flex:0 0 31px;width:31px;height:31px;background:#f3f0ff;color:#7c68bd;border-radius:10px}
+.wh-topic-symbol svg{width:17px;height:17px}
+.wh-topic-copy{display:flex;align-items:center;justify-content:space-between;flex:1;gap:10px;min-width:0}
+.wh-topic-copy strong{font-size:13px;font-weight:500;color:#334165;line-height:1.4}
+.wh-topic-copy small{font-size:10px;color:#929bb5;text-align:right}
+.wh-topic-arrow{color:#b1b8ce;display:flex;margin-left:4px}
+.wh-topic-arrow svg{width:13px;height:13px}
+.wh-community-page .community-note{display:flex;align-items:center;gap:7px;font-size:11px;line-height:1.8;color:#8d94ae;margin:24px 0 0}
+.wh-community-page .community-note>span{font-size:18px;color:#a391cc}
+.wh-world-detail-main{max-width:980px;padding:35px 32px 55px;margin:auto}
+.wh-desktop-back{display:inline-flex;font-size:12px;color:#7d87a5;margin-bottom:22px}
+.bunny-hero{position:relative;isolation:isolate;min-height:420px;border-radius:22px;overflow:hidden;background:#ece9fb}
+.bunny-hero::after{content:'';position:absolute;z-index:0;inset:40% 0 0;background:linear-gradient(transparent,#faf9ff7a 45%,#faf9ff 100%);pointer-events:none}
+.bunny-hero>img{display:block;position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 35%;z-index:-1}
+.bunny-hero-copy{position:absolute;left:30px;bottom:25px;z-index:1;color:#162450}
+.bunny-world-label{font-size:9px;letter-spacing:.16em;color:#647298}
+.bunny-hero-copy h1{font-size:40px;line-height:1.1;letter-spacing:-.045em;margin:6px 0 9px;font-weight:650}
+.bunny-hero-copy p{margin:0;font-size:13px;line-height:1.65;color:#627092}
+.bunny-actions{display:flex;gap:12px;margin:18px 0 20px}
+.bunny-actions .btn{min-height:44px;padding:13px 24px;gap:10px;font-size:12px;font-weight:600}
+.bunny-actions .cyan{background:#2cbbd1;box-shadow:0 3px 12px #2cbbd122}
+.bunny-actions .ghost{border-color:#e3e6f2;background:#fff;color:#4f5d83}
+.bunny-section-nav{display:flex;justify-content:flex-start;gap:34px;border-bottom:1px solid #e2e5f0}
+.bunny-section-nav a{min-height:45px;display:flex;align-items:center;font-size:12px;color:#74809f;padding:0 2px;border-bottom:2px solid transparent}
+.bunny-section-nav a:first-child{font-weight:600;color:#213566;border-bottom-color:#6572ae}
+.bunny-section-nav a:hover{color:#273967;border-bottom-color:#a6aed1}
+.bunny-content-section{padding:31px 0 5px;scroll-margin-top:24px}
+.wh-overline{font-size:9px;font-weight:550;letter-spacing:.13em;color:#9591b2;margin:0 0 12px}
+.bunny-content-section h2{color:#1c2b55;font-size:25px;font-weight:550;letter-spacing:-.025em;line-height:1.4;margin:0 0 14px}
+.bunny-content-section>p:not(.wh-overline){font-size:13px;color:#7883a1;line-height:1.9;max-width:690px;margin:0 0 14px}
+.bunny-feature-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px}
+.bunny-feature-list article{display:flex;align-items:flex-start;gap:12px;padding:18px 15px;background:#fff;border:1px solid #e9e9f4;border-radius:16px}
+.bunny-feature-list article>span{display:grid;place-items:center;width:30px;height:30px;flex:0 0 30px;border-radius:9px;color:#8770bd;background:#f4f0fc}
+.bunny-feature-list article>span svg{width:17px;height:17px}
+.bunny-feature-list h3{font-size:12px;font-weight:550;margin:2px 0 6px;color:#3e4e78}
+.bunny-feature-list p{font-size:11px;color:#929ab1;line-height:1.7;margin:0}
+.bunny-gallery{display:grid;grid-template-columns:1fr 1fr;gap:17px}
+.bunny-gallery figure{margin:0;min-width:0}
+.bunny-gallery img{display:block;width:100%;aspect-ratio:1.55;object-fit:cover;border:1px solid #e8e8f3;border-radius:15px}
+.bunny-gallery figcaption{font-size:10px;color:#969eb5;line-height:1.5;margin:8px 2px 0}
+.bunny-community-card{margin-top:36px;padding:26px;border:1px solid #e5e2f3;border-radius:18px;background:linear-gradient(110deg,#f0eafb,#f5f8ff)}
+.bunny-community-card h2{margin:9px 0 8px;font-size:23px}
+.wh-inline-link{display:inline-flex;align-items:center;gap:9px;font-size:12px;color:#7366a5;padding:8px 0}
+.wh-inline-link svg{width:13px;height:13px}
+.bunny-product-note{font-size:10px;line-height:1.9;color:#939cb3;max-width:660px;margin:25px 0 0}
+.wh-product-page .product-detail-grid h1{color:#172452;background:none;-webkit-text-fill-color:currentColor;font-weight:650}
+.wh-product-page .product-detail-grid p:not(.section-kicker){color:#75809c}
+.wh-product-page .product-detail-grid .btn.primary{background:#283866}
+@media(max-width:767px){
+ .wh-app-page,.wh-bunny-page{padding-bottom:calc(72px + env(safe-area-inset-bottom));background:linear-gradient(150deg,#f1efff 0,#fbfbff 58%,#f7f8ff 100%)}
+ .wh-app-page .topbar,.wh-bunny-page .topbar{display:none}
+ .wh-app-page .mobile-app-head,.wh-bunny-page .mobile-app-head{display:flex;align-items:center;justify-content:space-between;height:57px;padding:0 12px}
+ .wh-chat-main{max-width:460px;min-height:calc(100svh - 129px - env(safe-area-inset-bottom));padding:27px 20px 12px}
+ .wh-chat-page .chat-welcome{margin:auto 0 25px}
+ .wh-chat-page .wh-saga-avatar{width:58px;height:58px;margin-bottom:25px}
+ .wh-chat-page .chat-welcome h1{font-size:27px;margin-bottom:11px}
+ .wh-chat-page .chat-welcome>p{font-size:11px;line-height:1.8;margin-bottom:12px}
+ .wh-preview-pill{font-size:9px;padding:4px 9px}
+ .wh-prompt-list{max-width:255px;gap:8px;margin-top:20px}
+ .wh-prompt-list button{min-height:44px;padding:7px 12px;font-size:11px;border-radius:14px;gap:10px}
+ .wh-prompt-symbol{width:24px;height:24px;flex-basis:24px}
+ .wh-chat-page .chat-form{min-height:55px;padding:5px 6px 5px 13px;border-radius:15px}
+ .wh-chat-page .chat-form input{font-size:16px;min-height:43px}
+ .wh-chat-page .chat-form input::placeholder{font-size:12px}
+ .wh-chat-page .chat-form .send{width:42px;height:42px;flex-basis:42px}
+ .wh-chat-page .chat-note{font-size:9px;line-height:1.6;margin-top:9px}
+ .wh-chat-session{gap:8px;margin-bottom:19px}
+ .wh-chat-session>a{font-size:10px}
+ .wh-chat-page .message{font-size:13px;padding:13px 15px;max-width:91%}
+ .wh-community-main{max-width:460px;margin:0 auto;padding:0 20px 20px}
+ .wh-community-page .community-heading{display:none}
+ .wh-community-tabs{margin-top:0!important;gap:12px}
+ .wh-community-tabs button{min-height:44px;font-size:10px;padding:11px 0}
+ .wh-community-page .community-banner{margin-top:18px;min-height:248px;padding:26px 22px;border-radius:17px;background-position:center 58%}
+ .wh-community-page .community-banner h2{font-size:24px;line-height:1.24;margin-bottom:12px;letter-spacing:-.04em}
+ .wh-community-page .community-banner p{font-size:11px;line-height:1.8;max-width:215px;margin-bottom:17px}
+ .wh-community-page .community-banner .btn{min-height:42px;font-size:10px;padding:11px 17px}
+ .wh-topics h2{font-size:18px;margin:29px 0 17px}
+ .wh-topic-link{gap:10px;min-height:64px;margin:9px 0;padding:10px 12px;border-radius:13px}
+ .wh-topic-symbol{width:28px;height:28px;flex-basis:28px;border-radius:8px}
+ .wh-topic-symbol svg{width:16px;height:16px}
+ .wh-topic-copy{gap:5px}
+ .wh-topic-copy strong{font-size:11px;letter-spacing:-.01em}
+ .wh-topic-copy small{font-size:9px;max-width:74px;line-height:1.5}
+ .wh-topic-arrow{margin-left:0}
+ .wh-topic-arrow svg{width:11px;height:11px}
+ .wh-community-page .community-note{font-size:10px;line-height:1.8;align-items:flex-start;margin-top:21px}
+ .wh-world-detail-main{padding:16px 20px 25px;max-width:520px}
+ .wh-desktop-back{display:none}
+ .bunny-hero{min-height:306px;border-radius:16px}
+ .bunny-hero>img{object-position:50% 30%}
+ .bunny-hero::after{inset:48% 0 0;background:linear-gradient(transparent,#faf9ff8a 40%,#faf9ff 96%)}
+ .bunny-hero-copy{left:14px;bottom:10px}
+ .bunny-world-label{font-size:8px;letter-spacing:.15em}
+ .bunny-hero-copy h1{font-size:29px;line-height:1.1;margin:5px 0 6px}
+ .bunny-hero-copy p{font-size:11px;line-height:1.55;color:#627091}
+ .bunny-actions{margin:15px 0 15px;gap:10px}
+ .bunny-actions .btn{min-height:44px;padding:12px 17px;font-size:11px;gap:7px}
+ .bunny-actions .cyan{flex:1}
+ .bunny-actions .ghost{flex:0 0 104px}
+ .bunny-section-nav{justify-content:space-between;gap:12px}
+ .bunny-section-nav a{min-height:45px;font-size:10px;padding:0}
+ .bunny-content-section{padding-top:25px;scroll-margin-top:18px}
+ .wh-overline{font-size:8px;line-height:1.7;letter-spacing:.1em;margin-bottom:9px}
+ .bunny-content-section h2{font-size:21px;line-height:1.45;margin-bottom:12px}
+ .bunny-content-section>p:not(.wh-overline){font-size:12px;line-height:1.9;margin-bottom:13px}
+ .bunny-feature-list{grid-template-columns:1fr;gap:10px}
+ .bunny-feature-list article{padding:15px;gap:13px;border-radius:14px}
+ .bunny-feature-list h3{font-size:12px;margin:1px 0 4px}
+ .bunny-feature-list p{font-size:11px}
+ .bunny-gallery{gap:12px}
+ .bunny-gallery img{aspect-ratio:1/1.13;border-radius:12px;object-position:center}
+ .bunny-gallery figure:first-child img{object-position:48% 50%}
+ .bunny-gallery figcaption{font-size:9px;margin-top:7px}
+ .bunny-community-card{padding:21px 19px;margin-top:27px;border-radius:15px}
+ .bunny-community-card h2{font-size:21px}
+ .bunny-product-note{font-size:9px;line-height:1.85;margin-top:22px}
+ .wh-bunny-page .footer{display:none}
+}
+@media(max-width:370px){
+ .wh-chat-main{padding-inline:16px}
+ .wh-chat-page .wh-saga-avatar{width:50px;height:50px;margin-bottom:18px}
+ .wh-chat-page .chat-welcome h1{font-size:25px}
+ .wh-community-main{padding-inline:16px}
+ .wh-topic-copy{align-items:flex-start;flex-direction:column;gap:3px}
+ .wh-topic-copy small{max-width:none;text-align:left}
+ .wh-world-detail-main{padding-inline:16px}
+ .bunny-actions .btn{font-size:10px;padding-inline:13px}
+}
+@media(prefers-reduced-motion:reduce){
+ .wh-prompt-list button,.wh-topic-link{transition:none}
+ .wh-prompt-list button:hover{transform:none}
+}
