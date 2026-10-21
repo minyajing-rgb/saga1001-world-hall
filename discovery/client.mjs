@@ -1,7 +1,7 @@
 /* Progressive enhancement only. Indexable text exists in HTML without this module. */
 const summary=document.querySelector('#discovery-summary')?.cloneNode(true);
 const rootTitle=document.title;
-const routes={'#/':'/','#/worlds':'/products/','#/products':'/products/','#/about':'/about/','#/press':'/press/','#/media-kit':'/media-kit/','#/partners':'/partners/','#/press/wmf-soft-landing-2027':'/press/wmf-soft-landing-2027/','#/world/bunny':'/products/bunny-crystal-oracle/','#/world/plot':'/products/plot/','#/world/dreamplot':'/products/dreamplot/','#/world/dharma':'/products/dharma-atlas/','#/world/bible':'/products/from-john-to-jesus/','#/world/healing':'/products/earth-healing/'};
+const routes={'#/':'/','#/products':'/products/','#/about':'/about/','#/press':'/press/','#/media-kit':'/media-kit/','#/partners':'/partners/','#/press/wmf-soft-landing-2027':'/press/wmf-soft-landing-2027/','#/world/bunny':'/products/bunny-crystal-oracle/','#/world/plot':'/products/plot/','#/world/dreamplot':'/products/dreamplot/','#/world/dharma':'/products/dharma-atlas/','#/world/bible':'/products/from-john-to-jesus/','#/world/healing':'/products/earth-healing/'};
 export function mountDiscovery(){
  const root=document.querySelector('#app');if(!root)return;
  function apply(){const h=location.hash;if(h&&h!=='#/'&&routes[h]){location.replace(routes[h]);return;}

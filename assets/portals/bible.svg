@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-labelledby="title">
+<title id="title">Bible · luminous chapel and open book</title>
+<defs>
+ <radialGradient id="sky" cx="40%" cy="30%" r="75%"><stop stop-color="#d6c9ff"/><stop offset=".54" stop-color="#8777cc"/><stop offset="1" stop-color="#343b87"/></radialGradient>
+ <linearGradient id="glass" x1="0" y1="0" x2=".8" y2="1"><stop stop-color="#fff" stop-opacity=".62"/><stop offset=".48" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#bdc5ff" stop-opacity=".18"/></linearGradient>
+ <linearGradient id="rim" x1="0" y1="0" x2=".9" y2="1"><stop stop-color="#fff"/><stop offset=".45" stop-color="#dbeaff"/><stop offset=".73" stop-color="#a9b7e0"/><stop offset="1" stop-color="#fff"/></linearGradient>
+ <radialGradient id="haze"><stop stop-color="#fff" stop-opacity=".48"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient>
+ <clipPath id="round"><circle cx="50" cy="50" r="46"/></clipPath>
+ 
+</defs>
+<circle cx="50" cy="50" r="48" fill="#343b87" stroke="url(#rim)" stroke-width="2.8"/>
+<g clip-path="url(#round)">
+ <circle cx="50" cy="50" r="46" fill="url(#sky)"/>
+ <ellipse cx="42" cy="26" rx="37" ry="25" fill="url(#haze)"/>
+ 
+ <circle cx="50" cy="43" r="29" fill="none" stroke="#ded8ff" stroke-opacity=".45"/>
+ <path d="M3 79Q16 62 29 71Q43 62 56 74Q76 60 99 76V100H0Z" fill="#d5d2fa" opacity=".35"/>
+ <path d="M24 63H76V71H24Z" fill="#a9a8dd"/>
+ <path d="M31 44L50 29L70 44V64H31Z" fill="#efecff"/>
+ <path d="M28 45L50 27L73 45L68 47L50 33L33 47Z" fill="#c1b2ec"/>
+ <path d="M44 27L50 16L56 27V40H44Z" fill="#fff6f5"/>
+ <path d="M49 12H51V20H49ZM46 15H54V17H46Z" fill="#fff5cd"/>
+ <path d="M44 27H56L50 17Z" fill="#b7a0db"/>
+ <path d="M45 64V53Q50 46 55 53V64" fill="#8c87cc"/>
+ <path d="M47 63V54Q50 50 53 54V63Z" fill="#f9e5ac"/>
+ <path d="M35 50H40V57H35ZM61 50H66V57H61Z" fill="#c8bdf0"/>
+ <circle cx="50" cy="41" r="3.5" fill="#fff3c6" stroke="#b7a2e0" stroke-width="1"/>
+ <path d="M20 69Q36 65 50 73Q64 65 80 69L77 83Q63 80 50 85Q37 80 23 83Z" fill="#f5eeff" stroke="#bbb1e4" stroke-width="1"/>
+ <path d="M50 73V85M24 74Q36 71 46 77M25 78Q37 75 46 80M54 77Q65 71 76 74M54 80Q64 75 75 78" stroke="#b7a4d8" stroke-width="1" fill="none"/>
+ <g fill="#fff8ef"><circle cx="20" cy="32" r="1.3"/><circle cx="77" cy="26" r="1.2"/><circle cx="70" cy="15" r=".8"/></g>
+
+ <path d="M11 32C22 7 56 1 80 20C59 8 27 15 11 32Z" fill="#fff" opacity=".22"/>
+ <circle cx="50" cy="50" r="45.4" fill="none" stroke="#fff" stroke-opacity=".2" stroke-width="1"/>
+</g>
+<circle cx="50" cy="50" r="46.6" fill="none" stroke="url(#glass)" stroke-width="1.1"/>
+</svg>

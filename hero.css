@@ -1,345 +1,164 @@
-/* SAGA1001 homepage: question first, with the original world-hall artwork. */
-.saga-hero-refresh {
-  --hero-ink: #20182d;
-  --hero-muted: #756a7e;
-  --hero-line: #e9e1ee;
-  margin: 20px clamp(16px, 2.6vw, 42px) 0;
-  border: 1px solid #eee7ee;
-  border-radius: 30px;
-  background:
-    radial-gradient(ellipse at 87% 22%, #f2e2f7 0, transparent 38%),
-    radial-gradient(ellipse at 68% 68%, #e3effb 0, transparent 37%),
-    #fffdf9;
-  box-shadow: 0 20px 65px #5b3c6f0a;
-  overflow: hidden;
+/* SAGA1001 World Hall V2 — the original immersive blueprint. */
+:root{--hall-ink:#12204d;--hall-muted:#697392;--hall-violet:#775acc;--hall-line:#e5e5f4;--hall-paper:#f8f8ff}
+.home-page{background:#fafaff;color:var(--hall-ink)}
+.home-page .brand,.hall-worlds-page .brand,.hall-realm-page .brand,.hall-me-page .brand,.hall-search-page .brand{background:none;background-clip:border-box;color:var(--hall-ink);font-weight:650;letter-spacing:-1.2px}
+.hall-skip{position:fixed;top:10px;left:16px;z-index:100;background:#fff;color:#11204d;padding:12px 20px;transform:translateY(-160%);border-radius:8px}
+.hall-skip:focus{transform:translateY(0)}
+.world-hall.v21-hero{position:relative;isolation:isolate;height:min(850px,calc(100svh - 36px));min-height:660px;margin:18px 22px 0;border:0;border-radius:14px;overflow:hidden;background:#b4b7e3;box-shadow:0 12px 40px #24326c12}
+.hall-scene{position:absolute;inset:0;z-index:-3;display:block;width:100%;height:100%;max-width:none;object-fit:cover;object-position:center 49%}
+.hall-atmosphere{position:absolute;inset:0;z-index:-2;pointer-events:none;background:linear-gradient(90deg,#f1edff72 0,#f1e8ff33 31%,transparent 55%),linear-gradient(0deg,#0a1c3fc2 0,#173a572e 21%,transparent 40%)}
+.world-hall .topbar.on-hero{height:76px;padding:0 3.5%;gap:28px;background:transparent;color:#fff;border:0;box-shadow:none}
+.world-hall .topbar .brand{color:#fff;background:none;font-size:25px;font-weight:550;letter-spacing:-1px}
+.world-hall .desktop-links{justify-content:flex-start;gap:clamp(18px,2vw,34px);margin-left:24px}
+.world-hall .desktop-links a{font-size:12px;font-weight:500;min-height:44px;display:flex;align-items:center;text-shadow:0 1px 6px #20325544}
+.world-hall .head-actions{margin-left:auto;gap:12px}
+.world-hall .search-trigger{width:144px;padding:0 12px;min-height:38px;background:#ffffff26;color:#fff;border:1px solid #ffffff29}
+.world-hall .search-trigger svg{width:17px;height:17px}
+.world-hall .tiny-icon{display:grid;place-items:center;background:#ffffff2e;color:#fff;width:38px;height:38px}
+.world-hall .hamburger{display:none}
+.hall-copy{position:absolute;left:4.8%;top:23%;z-index:1;color:var(--hall-ink);max-width:610px}
+.hall-copy h1{margin:0 0 16px;font-size:clamp(42px,4.1vw,65px);line-height:1.055;letter-spacing:-.045em;font-weight:650}
+.hall-copy h1 span{display:block}
+.hall-subtitle{font-size:14px;letter-spacing:.06em;font-weight:500;line-height:1.7;margin:0 0 8px}
+.hall-description{font-size:clamp(12px,1vw,15px);line-height:1.65;margin:0;max-width:490px;color:#162952}
+.hall-actions{display:flex;gap:12px;margin-top:24px}
+.hall-button{min-height:46px;display:inline-flex;align-items:center;justify-content:center;gap:15px;padding:13px 25px;border:1px solid transparent;border-radius:100px;font-size:13px;font-weight:600;line-height:1.3;white-space:nowrap;transition:transform .18s,box-shadow .18s}
+.hall-button-primary{background:#132047;color:#fff;box-shadow:0 4px 15px #14234e1a}
+.hall-button-light{background:#fffefeee;color:#16244c;border-color:#fff;box-shadow:0 4px 18px #37486712}
+.hall-button:hover{transform:translateY(-2px);box-shadow:0 7px 24px #1c27572b}
+.hall-aside{position:absolute;right:4.2%;top:29%;margin:0;text-align:right;color:#15264d;font-size:17px;line-height:1.6;letter-spacing:-.015em;text-shadow:0 1px 18px #ffffffaa}
+.hall-aside strong{font-size:21px;font-weight:600}
+.hall-portals{position:absolute;left:4.3%;right:4.3%;bottom:57px;display:grid;grid-template-columns:repeat(8,minmax(0,1fr));gap:14px;z-index:2}
+.hall-portal{display:flex;flex-direction:column;align-items:center;text-align:center;color:#fff;min-width:0;transition:transform .2s;text-shadow:0 2px 6px #101f49}
+.hall-portal:hover{transform:translateY(-7px)}
+.hall-medallion{display:block;position:relative;width:clamp(68px,6vw,88px);height:clamp(68px,6vw,88px);flex:none;aspect-ratio:1;border:2px solid #ffffffdf;border-radius:50%;overflow:hidden;box-shadow:0 0 0 5px #c9d6ff1a,0 0 28px #b8caff6b,0 6px 15px #182c6240;background:#7081c4;margin-bottom:12px}
+.hall-medallion img{display:block;width:100%;height:100%;object-fit:cover;max-width:none}
+.hall-medallion--bunny img{width:235%;height:118%;object-fit:cover;position:absolute;left:-66%;top:-8%;object-position:49% 50%}
+.hall-portal strong{font-weight:550;font-size:15px;line-height:1.4;margin-top:0}
+.hall-portal small{font-size:11px;line-height:1.4;color:#f2f3ff;font-weight:400;margin-top:1px}
+.hall-scroll{position:absolute;left:50%;bottom:15px;transform:translateX(-50%);display:flex;align-items:center;flex-direction:column;color:#fff;opacity:.9;font-size:10px;line-height:1.3;min-width:100px;text-align:center}
+.hall-scroll span{font-size:20px;line-height:14px;margin-top:3px}
+.hall-inspiration,.hall-mobile-more{display:none}
+.hall-directory{max-width:1260px;margin:0 auto;padding:88px 32px 65px;scroll-margin-top:24px}
+.hall-section-heading{max-width:670px;margin:0 auto 36px;text-align:center;color:var(--hall-ink)}
+.hall-section-heading .section-kicker{font-size:10px;color:#7e6db2;font-weight:600;line-height:1.8;letter-spacing:.2em}
+.hall-section-heading h2,.hall-section-heading h1{font-size:clamp(32px,3.2vw,48px);line-height:1.2;letter-spacing:-.045em;font-weight:600;margin:14px 0 17px;color:var(--hall-ink)}
+.hall-section-heading h2 span{color:#7563b0}
+.hall-section-heading>p:last-child{font-size:14px;line-height:1.8;color:var(--hall-muted)}
+.hall-world-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}
+.hall-world-card{position:relative;display:flex;flex-direction:column;align-items:center;text-align:center;gap:4px;border:1px solid #e4e6f5;border-radius:22px;background:linear-gradient(140deg,#fff,#f5f5ff);padding:29px 20px 25px;transition:transform .2s,box-shadow .2s}
+.hall-world-card:hover{transform:translateY(-4px);box-shadow:0 12px 28px #444b7c12}
+.hall-world-card .hall-medallion{width:76px;height:76px;margin-bottom:10px;border-color:#fff;box-shadow:0 5px 20px #6570b826,0 0 0 4px #eeedfb}
+.hall-world-card>div>span{font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:#8a7bac}
+.hall-world-card h3{font-size:21px;line-height:1.25;color:var(--hall-ink);margin:5px 0 8px;font-weight:600;letter-spacing:-.02em}
+.hall-world-card p{font-size:12px;line-height:1.7;color:var(--hall-muted);margin:0;max-width:210px}
+.hall-card-arrow{position:absolute;right:17px;top:17px;font-size:17px;color:#aaa1c3}
+.hall-directory-note{font-size:12px;line-height:1.8;color:var(--hall-muted);text-align:center;margin-top:30px}
+.hall-text-link{display:inline-flex;align-items:center;gap:12px;font-size:13px;font-weight:550;color:#6b56a7;margin-top:26px;min-height:44px}
+.hall-worlds-page,.hall-realm-page,.hall-me-page,.hall-search-page{background:linear-gradient(135deg,#f8f7ff,#fff 60%,#f3f9ff)}
+.hall-worlds-page .hall-directory>.hall-text-link{display:flex;justify-content:center}
+.hall-bunny-feature{max-width:1270px;margin:30px auto 45px;padding:0 32px;display:grid;grid-template-columns:1.15fr 1fr;gap:65px;align-items:center}
+.hall-bunny-image{display:block;overflow:hidden;border-radius:24px;box-shadow:0 8px 40px #5b4c8c14}
+.hall-bunny-image img{display:block;width:100%;aspect-ratio:1.25;object-fit:cover;object-position:48% center;transition:transform .8s}
+.hall-bunny-image:hover img{transform:scale(1.025)}
+.hall-bunny-feature h2{font-size:clamp(32px,3.1vw,45px);letter-spacing:-.04em;line-height:1.15;color:var(--hall-ink);font-weight:600;margin:14px 0 20px}
+.hall-bunny-feature p:not(.section-kicker){color:var(--hall-muted);font-size:14px;line-height:1.85;margin:0 0 25px}
+.hall-bunny-feature .section-kicker{font-size:10px;font-weight:600;color:#9a78b8}
+.hall-products.v21-worlds{padding-top:65px;padding-bottom:75px;max-width:1270px}
+.hall-products .brand-world-grid{margin-top:30px;gap:20px}
+.hall-products .brand-world-grid .brand-world{border-radius:18px;border-color:#e8e8f4;box-shadow:0 6px 25px #47427b07}
+.hall-products .brand-world-copy h3{font-weight:600;font-size:21px;color:var(--hall-ink)}
+.hall-products .brand-world-copy small{font-weight:500;font-size:10px;color:#8a75b4}
+.hall-products .brand-world-copy p{font-size:13px;line-height:1.7;color:var(--hall-muted)}
+.hall-products .brand-world-art{height:auto;aspect-ratio:1.62}
+.hall-products>.hall-text-link{display:flex;justify-content:center}
+.hall-closing{max-width:1206px;margin:0 auto 55px;border:1px solid #e6e6f6;border-radius:24px;padding:65px 25px;text-align:center;background:radial-gradient(ellipse at 22% 0,#f2e8ff,transparent 55%),radial-gradient(ellipse at 80% 80%,#e6f0ff,transparent 55%),#f7f7ff}
+.hall-closing h2{font-size:clamp(30px,3.5vw,45px);font-weight:600;line-height:1.3;letter-spacing:-.04em;color:var(--hall-ink);margin:16px 0 26px}
+.hall-closing .hall-text-link{display:flex;justify-content:center;margin-top:14px}
+.home-page .pr-selection-strip{margin:20px auto 0;max-width:1206px;padding:18px 24px;background:#fff;border:1px solid #e9e6f5;border-radius:14px;box-shadow:none}
+.home-page .pr-selection-strip>div>small:first-child{color:#8d79af}
+.home-page .discovery-summary{max-width:1206px;border-top:1px solid #e5e6f0;background:transparent;border-radius:0;padding:45px 20px 30px;margin:0 auto}
+.home-page .discovery-summary h2{font-size:24px;line-height:1.4;color:var(--hall-ink);font-weight:550;letter-spacing:-.03em}
+.home-page .discovery-summary p,.home-page .discovery-summary a{font-size:12px;line-height:1.9}
+.home-page .discovery-summary h3{font-size:15px;font-weight:550}
+.home-page .footer{border-top:1px solid #ececf6;margin-top:25px}
+.home-page .footer strong{color:#4e478b;font-weight:500}
+.hall-realm-main{max-width:1050px;margin:auto;padding:30px 28px 75px}
+.hall-realm-header{max-width:660px;text-align:center;margin:35px auto}
+.hall-realm-header .hall-medallion{width:100px;height:100px;margin:0 auto 28px;box-shadow:0 10px 35px #7c79c52a,0 0 0 5px #eeeefb}
+.hall-realm-header h1{font-size:48px;font-weight:600;letter-spacing:-.04em;color:var(--hall-ink);margin:15px 0}
+.hall-realm-header>p:last-of-type{color:var(--hall-muted);font-size:15px;line-height:1.8;margin:20px auto 0}
+.hall-realm-main .brand-world-grid{grid-template-columns:repeat(2,minmax(0,1fr));max-width:850px;margin:35px auto 0}
+.hall-realm-main .brand-world-grid:has(>.brand-world:only-child){max-width:440px;grid-template-columns:1fr}
+.hall-realm-main>.hall-text-link:last-child{display:flex;justify-content:center}
+.hall-status{display:inline-block;padding:6px 13px;border:1px solid #e1d9ee;color:#8b6daf;background:#f6f0fb;border-radius:20px;font-size:11px;margin-top:18px}
+.hall-breath-link,.hall-external-realm{display:flex;flex-direction:column;max-width:440px;margin:24px auto 0;background:linear-gradient(120deg,#e5f5f1,#eeedff);border:1px solid #d9e7ed;border-radius:20px;padding:26px;color:#304d6a;gap:8px}
+.hall-breath-link span,.hall-external-realm span{font-size:12px}.hall-breath-link strong,.hall-external-realm strong{font-size:22px;font-weight:550}.hall-breath-link small,.hall-external-realm small{font-size:12px;line-height:1.6}
+.hall-external-realm{background:linear-gradient(135deg,#ece7ff,#e6effb);color:#3e3f7d;min-height:150px;justify-content:center}
+.hall-me-icon{display:grid;place-items:center;width:74px;height:74px;border-radius:50%;color:#8472b5;background:#eeebfb;margin:0 auto 25px}.hall-me-icon svg{width:35px;height:35px}
+.hall-me-links{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:50px 0 30px}
+.hall-me-links>a{display:flex;flex-direction:column;gap:15px;background:#fff;border:1px solid #e3e4f0;border-radius:18px;padding:30px 20px;color:var(--hall-ink)}
+.hall-me-links>a>span{font-size:12px;color:#8674b4}
+.hall-search-form{display:flex;max-width:620px;margin:30px auto;border:1px solid #e0dff0;background:#fff;border-radius:999px;padding:6px;box-shadow:0 4px 30px #373c7310}
+.hall-search-form input{background:none;border:0;outline:0;min-width:0;flex:1;font-size:14px;color:var(--hall-ink);padding:10px 18px}
+.hall-search-form:focus-within{outline:3px solid #b3a2e1;outline-offset:3px}
+.hall-search-count{font-size:12px;text-align:center;color:var(--hall-muted);margin-bottom:30px}
+.hall-search-page .brand-world-grid{grid-template-columns:repeat(3,minmax(0,1fr));margin-top:34px}
+.topbar button svg,.bottom-nav svg{display:block}
+.bottom-nav a span{display:grid;place-items:center}
+.mobile-menu[hidden]{display:none!important}
+.mobile-menu{background:#f8f7fffa;backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);color:var(--hall-ink)}
+.mobile-menu a{min-height:44px;display:flex;align-items:center}
+body.menu-open{overflow:hidden}
+a:focus-visible,button:focus-visible{outline:3px solid #ab8ee2;outline-offset:5px}
+@media(min-width:1600px){.hall-copy{top:25%}.hall-portals{bottom:63px}.hall-copy h1{font-size:68px}}
+@media(min-width:768px) and (max-width:1050px){.world-hall.v21-hero{margin:14px;height:710px;min-height:640px}.world-hall .topbar.on-hero{padding:0 28px;gap:16px}.world-hall .desktop-links{gap:15px;margin-left:4px}.world-hall .desktop-links a{font-size:11px}.world-hall .search-trigger{width:36px;padding:8px}.world-hall .search-trigger span{display:none}.hall-copy{top:23%;left:5%;max-width:520px}.hall-copy h1{font-size:46px}.hall-description{max-width:390px;font-size:13px}.hall-desktop-break{display:none}.hall-aside{font-size:13px;right:4%;top:31%}.hall-aside strong{font-size:17px}.hall-medallion{width:65px;height:65px}.hall-portals{gap:8px;left:3%;right:3%}.hall-portal strong{font-size:12px}.hall-portal small{font-size:9px}.hall-world-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}.hall-world-card{padding:24px 14px}.hall-world-card h3{font-size:19px}.hall-bunny-feature{gap:35px}.hall-closing{margin-left:32px;margin-right:32px}.world-hall .hall-atmosphere{background:linear-gradient(90deg,#f0eaff88,transparent 70%),linear-gradient(0deg,#0a1c3fd1,transparent 38%)}}
+@media(max-width:767px){
+ .home-page{padding-bottom:calc(68px + env(safe-area-inset-bottom));background:#f9f9ff}
+ .world-hall.v21-hero{margin:0;height:calc(100svh - 68px - env(safe-area-inset-bottom));min-height:656px;max-height:820px;border-radius:0;box-shadow:none;background:#f2f0fc}
+ .hall-scene{object-position:61% top}
+ .hall-atmosphere{background:linear-gradient(180deg,#f7f5ff87 0,#f0ebfd50 14%,#eeebfc6b 25%,#e8eaffba 44%,#e8ebffd6 61%,#f7f5fffa 85%,#f8f7ff 100%)}
+ .world-hall .topbar.on-hero{height:62px;padding:0 22px;color:var(--hall-ink);background:linear-gradient(#f9f8ffbf,#f9f8ff2b);gap:0}
+ .world-hall .topbar .brand{font-size:22px;color:var(--hall-ink);font-weight:600;letter-spacing:-1px}
+ .world-hall .topbar .desktop-links,.world-hall .search-trigger,.world-hall .tiny-icon{display:none}
+ .world-hall .hamburger{display:grid;place-items:center;width:44px;height:44px;margin-right:-10px;background:transparent;color:var(--hall-ink);border:0}
+ .world-hall .hamburger svg{width:21px;height:21px}
+ .hall-copy{left:18px;right:18px;top:24%;max-width:none;text-align:center}
+ .hall-copy h1{font-size:clamp(30px,8.7vw,39px);line-height:1.055;letter-spacing:-.045em;font-weight:650;margin:0 0 13px}
+ .hall-subtitle{font-size:11px;letter-spacing:.02em;line-height:1.6;margin-bottom:8px}
+ .hall-description{font-size:10px;line-height:1.55;max-width:305px;margin:auto;color:#28375f}
+ .hall-desktop-break{display:none}
+ .hall-actions{justify-content:center;gap:10px;margin-top:22px}
+ .hall-actions .hall-button{min-height:44px;padding:11px 18px;font-size:11px;font-weight:600;box-shadow:0 5px 18px #35427318}
+ .hall-aside,.hall-scroll{display:none}
+ .hall-portals{left:24px;right:24px;bottom:190px;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+ .hall-portals .hall-portal:nth-child(n+5){display:none}
+ .hall-portal{color:var(--hall-ink);text-shadow:none}
+ .hall-medallion{width:55px;height:55px;border:2px solid #fff;box-shadow:0 0 0 4px #ffffff36,0 4px 13px #7275ae30;margin-bottom:8px}
+ .hall-portal strong{font-size:11px;font-weight:600;line-height:1.4}
+ .hall-portal small{font-size:8px;line-height:1.4;color:#8187a8;margin-top:1px}
+ .hall-mobile-more{position:absolute;display:flex;align-items:center;justify-content:center;left:24px;right:24px;bottom:151px;min-height:34px;gap:10px;font-size:10px;color:#76649b}
+ .hall-inspiration{position:absolute;left:22px;right:22px;bottom:20px;display:flex;align-items:center;justify-content:space-between;gap:8px;height:118px;padding:21px 18px;border:1px solid #f7efff;border-radius:15px;overflow:hidden;background:linear-gradient(100deg,#fff0f2f2,#f9dedbc9 50%,#c4b9e01f),url('/assets/world-hall-hero.jpg') 79% 43%/cover;box-shadow:0 7px 24px #8786b411;color:var(--hall-ink)}
+ .hall-inspiration small,.hall-inspiration strong,.hall-inspiration em{display:block}
+ .hall-inspiration small{font-size:10px;font-weight:600;line-height:1.5;margin-bottom:8px}
+ .hall-inspiration strong{font-size:13px;line-height:1.5;font-weight:500;letter-spacing:-.025em}
+ .hall-inspiration em{font-size:9px;font-style:normal;line-height:1.7;margin-top:7px;color:#686a91}
+ .hall-inspiration>b{font-size:19px;font-weight:400;align-self:flex-start;color:#6f6198}
+ .bottom-nav{height:calc(68px + env(safe-area-inset-bottom));padding-bottom:env(safe-area-inset-bottom);background:#fffffff5;backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border-top:1px solid #eeeef7;box-shadow:0 -4px 20px #39416b06;display:grid;grid-template-columns:repeat(5,1fr);position:fixed;inset:auto 0 0;z-index:30}
+ .bottom-nav a{display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:58px;gap:6px;color:#727a99}.bottom-nav a.active{color:#151e4c}.bottom-nav a.active svg{stroke-width:2.2}.bottom-nav small{font-size:9px;font-weight:500}.bottom-nav a.active small{font-weight:700}.bottom-nav svg{width:21px;height:21px}
+ .hall-directory{padding:55px 20px 38px;scroll-margin-top:15px}
+ .hall-section-heading{margin-bottom:28px}.hall-section-heading .section-kicker{font-size:8px}.hall-section-heading h2,.hall-section-heading h1{font-size:32px;line-height:1.2;margin:10px 0 14px}.hall-section-heading>p:last-child{font-size:12px;line-height:1.8;max-width:300px;margin:auto}
+ .hall-world-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+ .hall-world-card{padding:23px 13px 20px;border-radius:18px;gap:3px}.hall-world-card .hall-medallion{width:63px;height:63px;margin-bottom:10px}.hall-world-card h3{font-size:18px;margin:4px 0 7px}.hall-world-card>div>span{font-size:8px}.hall-world-card p{font-size:10px;line-height:1.7;max-width:150px}.hall-card-arrow{font-size:15px;right:12px;top:10px}
+ .hall-bunny-feature{padding:0 20px;grid-template-columns:1fr;gap:25px;margin:24px auto 15px;text-align:center}.hall-bunny-image{border-radius:20px}.hall-bunny-image img{aspect-ratio:1.3}.hall-bunny-feature h2{font-size:32px;margin:12px 0 18px}.hall-bunny-feature p:not(.section-kicker){font-size:12px;line-height:1.85;margin-bottom:20px}.hall-bunny-feature .section-kicker{font-size:9px}
+ .hall-products.v21-worlds{padding:55px 20px 42px}.hall-products .brand-world-grid{grid-template-columns:1fr;gap:15px;margin-top:28px}.hall-products .brand-world-copy h3{font-size:21px}.hall-products .brand-world-copy p{font-size:12px}.hall-products .brand-world-grid .brand-world{display:grid;grid-template-columns:40% 60%;border-radius:16px}.hall-products .brand-world-art{height:100%;aspect-ratio:auto;min-height:155px}.hall-products .brand-world-art img{object-position:50% 50%;object-fit:cover}.hall-products .brand-world-copy{padding:20px 14px;min-height:155px}.hall-products .brand-world-copy h3{font-size:17px;line-height:1.2}.hall-products .brand-world-copy small{font-size:9px}.hall-products .brand-world-copy p{font-size:10px;line-height:1.6;margin-bottom:10px;min-height:0}.hall-products .brand-world-copy>span{font-size:10px}
+ .hall-closing{margin:5px 20px 30px;padding:44px 18px;border-radius:20px}.hall-closing h2{font-size:30px}.hall-closing .section-kicker{font-size:8px;line-height:1.7}
+ .home-page .pr-selection-strip{margin:18px 20px 0;padding:14px 16px;border-radius:12px;gap:10px}.home-page .pr-selection-strip p{font-size:11px;line-height:1.5}.home-page .pr-selection-strip a{font-size:10px}.home-page .pr-selection-strip small{font-size:8px}
+ .home-page .discovery-summary{margin:0 20px;padding:30px 0 5px}.home-page .discovery-summary h2{font-size:20px}.home-page .discovery-summary p,.home-page .discovery-summary a{font-size:11px;line-height:1.9}.home-page .footer{padding:30px 20px 25px;margin-top:15px}.home-page .footer strong{font-size:22px}
+ .hall-realm-main{padding:18px 20px 90px}.hall-realm-header{margin:24px auto}.hall-realm-header h1{font-size:36px}.hall-realm-header .hall-medallion{width:82px;height:82px;margin-bottom:25px}.hall-realm-header>p:last-of-type{font-size:13px;line-height:1.85}.hall-realm-main .brand-world-grid{grid-template-columns:1fr}.hall-realm-main .brand-world-art{height:auto;aspect-ratio:1.6}.hall-realm-main .brand-world-copy p{font-size:12px;min-height:0}
+ .hall-worlds-page .hall-directory,.hall-search-page .hall-directory{padding-top:40px;padding-bottom:95px}.hall-search-page .brand-world-grid{grid-template-columns:1fr}.hall-me-links{grid-template-columns:1fr;gap:12px;margin:30px 0}.hall-me-links>a{padding:24px;gap:12px}.hall-me-page h1{font-size:30px}.hall-search-form input{font-size:12px;padding:10px 12px}.hall-search-form .hall-button{font-size:12px;padding:11px 18px}
+ .hall-worlds-page .topbar,.hall-realm-page .topbar,.hall-me-page .topbar,.hall-search-page .topbar{height:62px;padding:0 22px;background:#faf9ff}
+ .topbar .head-actions{margin-left:auto}.topbar .hamburger{min-width:44px;min-height:44px}.topbar .desktop-links,.topbar .search-trigger,.topbar .tiny-icon{display:none}.topbar .hamburger{display:grid;place-items:center}
 }
-.saga-hero-refresh .topbar {
-  background: #fffdf9e8;
-  border-bottom-color: #ede6ef;
-  padding-inline: clamp(24px, 4.1vw, 66px);
-}
-.saga-hero-refresh .topbar .tiny-icon { background: #f2edf7; color: #705684; }
-.saga-hero-refresh .desktop-links a { display: inline-flex; align-items: center; min-height: 44px; }
-.saga-hero-refresh .head-actions button { min-height: 44px; min-width: 44px; }
-.saga-hero-refresh .v21-hero-grid {
-  display: grid;
-  grid-template-columns: minmax(0, 1.13fr) minmax(0, 1fr);
-  gap: clamp(28px, 3.1vw, 48px);
-  align-items: center;
-  max-width: 1400px;
-  min-height: 570px;
-  padding: 40px clamp(28px, 4.2vw, 68px) 24px;
-  margin: auto;
-}
-.saga-hero-refresh .v21-hero-copy { display: block; max-width: 650px; min-width: 0; z-index: 2; }
-.saga-hero-refresh .hero-mobile-text { display: none; }
-.saga-hero-refresh .v21-hero-copy .section-kicker {
-  display: flex;
-  align-items: center;
-  gap: 9px;
-  color: #88629a;
-  font-size: 10px;
-  line-height: 1.6;
-  letter-spacing: .19em;
-  margin: 0 0 25px;
-}
-.hero-kicker-star { color: #a46dc7; font-size: 18px; line-height: 1; }
-.saga-hero-refresh .v21-hero-copy h1 {
-  font-size: clamp(48px, 5.35vw, 79px);
-  font-weight: 900;
-  line-height: 1.17;
-  letter-spacing: -.065em;
-  margin: 0 0 25px;
-  color: var(--hero-ink);
-}
-.saga-hero-refresh .v21-hero-copy h1 span {
-  background-image: linear-gradient(102deg, #dc3494 3%, #ae55c1 48%, #597fe0 99%);
-  -webkit-background-clip: text;
-  background-clip: text;
-}
-.saga-hero-refresh .v21-hero-copy > .hero-lede {
-  color: #6f6579;
-  font-size: 15px;
-  line-height: 1.85;
-  max-width: 540px;
-  margin: 0;
-}
-.saga-hero-refresh .hero-question {
-  max-width: 580px;
-  margin: 26px 0 0;
-  padding: 7px;
-  border-color: #e1d6e8;
-  box-shadow: 0 12px 30px #785a8910;
-}
-.saga-hero-refresh .hero-question input { min-height: 46px; font-size: 14px; padding: 12px 15px; }
-.saga-hero-refresh .hero-question input::placeholder { color: #91839a; }
-.saga-hero-refresh .hero-question button {
-  min-height: 46px;
-  padding: 13px 22px;
-  background: #241a34;
-  font-size: 13px;
-}
-.saga-hero-refresh .hero-question button > span { margin-left: 6px; }
-.saga-hero-refresh .hero-question:focus-within { outline: 3px solid #a276c2; outline-offset: 4px; }
-.saga-hero-refresh .hero-prompt-list { gap: 8px; margin-top: 12px; }
-.saga-hero-refresh .hero-prompt-list button {
-  min-height: 44px;
-  padding: 10px 14px;
-  border-color: #e8dfee;
-  background: #fffdfbb8;
-  font-size: 11px;
-  font-weight: 600;
-  color: #64536f;
-}
-.saga-hero-refresh .hero-prompt-list button > span { margin-left: 7px; color: #a888b9; }
-.saga-hero-refresh .hero-honesty { max-width: 520px; font-size: 10px; line-height: 1.7; margin: 16px 0 0; color: #8b8094; }
-.saga-portal { min-width: 0; width: 100%; height: 490px; position: relative; isolation: isolate; }
-.portal-window {
-  position: absolute;
-  inset: 18px 7% 44px 9%;
-  margin: 0;
-  border: 7px solid #ffffffcf;
-  border-radius: 49% 49% 24px 24px;
-  overflow: hidden;
-  background: #aaa5d8;
-  box-shadow: 0 23px 55px #68519525, 0 0 0 1px #e9dff1, inset 0 0 0 1px #fff;
-  z-index: 1;
-}
-.portal-window::after { content: ''; position: absolute; inset: 55% 0 0; background: linear-gradient(transparent, #24214c8a); pointer-events: none; }
-.portal-window > img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: 61% 48%; }
-.portal-window figcaption {
-  position: absolute;
-  bottom: 19px;
-  left: 22px;
-  right: 20px;
-  z-index: 1;
-  color: #fff;
-  font-size: 7px;
-  letter-spacing: .17em;
-  line-height: 1.8;
-}
-.portal-window figcaption > span { display: block; font-size: 12px; letter-spacing: .21em; font-weight: 700; }
-.portal-orbit { position: absolute; pointer-events: none; border: 1px solid #cdb8dd8a; border-radius: 50%; z-index: 0; }
-.portal-orbit-one { width: 105%; height: 64%; left: -2%; top: 22%; transform: rotate(-28deg); }
-.portal-orbit-two { width: 90%; height: 86%; left: 7%; top: 7%; transform: rotate(24deg); border-color: #d4c6e26e; }
-.portal-spark { position: absolute; pointer-events: none; color: #aa78c8; }
-.portal-spark-one { top: 9px; right: 10%; font-size: 29px; }
-.portal-spark-two { bottom: 39px; left: 5%; font-size: 26px; }
-.portal-tag {
-  position: absolute;
-  z-index: 3;
-  display: flex;
-  gap: 10px;
-  align-items: center;
-  min-height: 62px;
-  padding: 11px 16px 11px 12px;
-  border: 1px solid #ffffffed;
-  border-radius: 18px;
-  background: #fffffff0;
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
-  box-shadow: 0 10px 27px #69557e19, inset 0 0 0 1px #fff;
-  color: #493356;
-  transition: box-shadow .2s ease, translate .2s ease;
-}
-.portal-tag-icon { display: grid; place-items: center; width: 31px; height: 31px; flex: 0 0 31px; background: #f3ebf9; border-radius: 11px; font-size: 22px; color: #a067b5; }
-.portal-tag small { display: block; font-size: 7px; line-height: 1.4; letter-spacing: .12em; color: #8f789a; }
-.portal-tag strong { display: block; margin-top: 4px; font-size: 12px; line-height: 1.3; white-space: nowrap; font-weight: 650; }
-.portal-tag strong b { font-size: 12px; font-weight: 400; padding-left: 7px; color: #ac8abc; }
-.portal-tag-relationship { left: -1%; top: 21%; transform: rotate(-6deg); }
-.portal-tag-dream { right: -2%; top: 15%; transform: rotate(6deg); }
-.portal-tag-dream .portal-tag-icon { background: #ebf0fe; color: #7b7bc2; }
-.portal-tag-wisdom { left: -2%; bottom: 17%; transform: rotate(-5deg); }
-.portal-tag-wisdom .portal-tag-icon { background: #f7eedf; color: #a27c47; }
-.portal-product {
-  position: absolute;
-  right: -1%;
-  bottom: 29px;
-  z-index: 4;
-  width: 180px;
-  border: 6px solid white;
-  border-radius: 18px;
-  overflow: hidden;
-  background: white;
-  transform: rotate(6deg);
-  box-shadow: 0 13px 35px #422b6c2c;
-  transition: box-shadow .2s ease, translate .2s ease;
-}
-.portal-product > img { display: block; width: 100%; height: 105px; object-fit: cover; object-position: 50% 44%; border-radius: 11px; }
-.portal-product-copy { display: block; padding: 9px 5px 4px; }
-.portal-product-copy > small { display: block; font-size: 9px; line-height: 1.4; color: #97809f; }
-.portal-product-copy > strong { display: block; font-size: 12px; line-height: 1.35; color: #30213f; margin: 4px 0 6px; }
-.portal-product-copy > span { display: flex; align-items: center; justify-content: space-between; font-size: 10px; line-height: 1.4; color: #8c47a7; }
-.portal-product-copy b { font-size: 14px; font-weight: 400; }
-.portal-tag:hover, .portal-product:hover { translate: 0 -4px; box-shadow: 0 17px 34px #69557e33; }
-.portal-caption { position: absolute; left: 16%; bottom: 4px; margin: 0; color: #947b9b; font-size: 8px; letter-spacing: .16em; line-height: 1.5; }
-.portal-caption span { margin-left: 9px; font-size: 9px; letter-spacing: .04em; }
-.hero-products { max-width: 1400px; margin: 0 auto; padding: 0 clamp(28px, 4.2vw, 68px) 30px; }
-.hero-products-heading { display: flex; align-items: center; justify-content: space-between; gap: 20px; border-top: 1px solid #eae1ec; padding-top: 17px; margin-bottom: 9px; }
-.hero-products-heading p { color: #766681; font-size: 11px; letter-spacing: .04em; margin: 0; }
-.hero-products-heading a { display: inline-flex; align-items: center; gap: 11px; min-height: 44px; font-size: 11px; font-weight: 650; color: #785389; }
-.hero-product-grid { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 9px; }
-.hero-product-link {
-  display: flex;
-  align-items: center;
-  gap: 9px;
-  min-height: 74px;
-  min-width: 0;
-  border: 1px solid #e9e1ed;
-  border-radius: 15px;
-  padding: 10px 9px;
-  background: #ffffffc2;
-  transition: border-color .2s ease, background .2s ease, translate .2s ease;
-}
-.hero-product-thumb { display: block; width: 38px; height: 43px; flex: 0 0 38px; border-radius: 9px; overflow: hidden; background: #eae4f5; }
-.hero-product-thumb img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center; }
-.hero-product-name { min-width: 0; flex: 1; }
-.hero-product-name strong { display: block; color: #3e2c4b; font-size: 10px; font-weight: 700; line-height: 1.35; overflow-wrap: anywhere; }
-.hero-product-name small { display: block; color: #9a859f; font-size: 8px; line-height: 1.5; margin-top: 5px; }
-.hero-product-arrow { color: #ae8cba; font-size: 12px; flex: 0 0 auto; }
-.hero-product-link:hover { background: #fff; border-color: #cda9de; translate: 0 -3px; }
-.saga-hero-refresh :is(a, button):focus-visible { outline: 3px solid #8453b8; outline-offset: 4px; }
-
-@media (min-width: 1500px) {
-  .saga-hero-refresh .v21-hero-grid { min-height: 620px; padding-top: 48px; padding-bottom: 32px; }
-  .saga-portal { height: 520px; }
-  .portal-product { width: 192px; }
-  .portal-product > img { height: 114px; }
-}
-@media (max-width: 1150px) {
-  .saga-hero-refresh .v21-hero-grid { gap: 24px; padding: 35px 32px 22px; min-height: 530px; }
-  .saga-hero-refresh .v21-hero-copy h1 { font-size: clamp(41px, 5.3vw, 62px); }
-  .saga-hero-refresh .v21-hero-copy > .hero-lede { font-size: 13px; }
-  .saga-hero-refresh .v21-hero-copy .section-kicker { letter-spacing: .12em; font-size: 8px; margin-bottom: 20px; }
-  .saga-hero-refresh .hero-question input { padding-inline: 10px; font-size: 12px; }
-  .saga-hero-refresh .hero-question button { padding-inline: 15px; font-size: 12px; }
-  .saga-portal { height: 440px; }
-  .portal-window { inset: 20px 5% 38px 8%; }
-  .portal-tag { padding: 9px; gap: 7px; min-height: 55px; border-radius: 14px; }
-  .portal-tag-icon { width: 26px; height: 28px; flex-basis: 26px; font-size: 19px; }
-  .portal-tag strong { font-size: 10px; }
-  .portal-tag strong b { padding-left: 3px; }
-  .portal-tag small { font-size: 6px; }
-  .portal-tag-relationship { left: -3%; top: 24%; }
-  .portal-tag-dream { right: -3%; }
-  .portal-tag-wisdom { left: -2%; bottom: 21%; }
-  .portal-product { width: 146px; right: -2%; bottom: 22px; border-width: 5px; }
-  .portal-product > img { height: 86px; }
-  .portal-product-copy > strong { font-size: 10px; }
-  .portal-product-copy > small, .portal-product-copy > span { font-size: 8px; }
-  .portal-caption { left: 8%; font-size: 6px; bottom: 0; }
-  .portal-caption span { font-size: 8px; margin-left: 4px; }
-  .hero-products { padding-inline: 32px; }
-  .hero-product-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-  .hero-product-name strong { font-size: 11px; }
-  .hero-product-name small { font-size: 9px; }
-}
-@media (max-width: 900px) and (min-width: 641px) {
-  .saga-hero-refresh .v21-hero-grid { grid-template-columns: minmax(0, 1.12fr) minmax(0, 1fr); gap: 14px; padding: 38px 27px 28px; min-height: 485px; }
-  .saga-hero-refresh .v21-hero-copy h1 { font-size: clamp(33px, 5.2vw, 45px); margin-bottom: 19px; }
-  .saga-hero-refresh .v21-hero-copy > .hero-lede { font-size: 12px; line-height: 1.8; }
-  .hero-wide-break { display: none; }
-  .saga-hero-refresh .hero-question { padding: 5px; margin-top: 20px; }
-  .saga-hero-refresh .hero-question button { padding: 11px 12px; font-size: 11px; }
-  .saga-hero-refresh .hero-question button > span { margin-left: 2px; }
-  .saga-hero-refresh .hero-prompt-list { gap: 5px; }
-  .saga-hero-refresh .hero-prompt-list button { padding: 8px 9px; font-size: 10px; }
-  .saga-hero-refresh .hero-prompt-list button > span { margin-left: 3px; }
-  .saga-hero-refresh .hero-honesty { font-size: 9px; }
-  .saga-portal { height: 372px; }
-  .portal-window { inset: 12px 4% 34px 6%; border-width: 5px; }
-  .portal-tag { gap: 5px; padding: 8px; min-height: 46px; }
-  .portal-tag-icon { width: 22px; flex-basis: 22px; height: 25px; font-size: 18px; border-radius: 8px; }
-  .portal-tag strong { font-size: 9px; }
-  .portal-tag-relationship { top: 23%; }
-  .portal-tag-dream { top: 12%; }
-  .portal-tag-wisdom { bottom: 24%; }
-  .portal-product { width: 122px; bottom: 15px; }
-  .portal-product > img { height: 74px; }
-  .portal-product-copy { padding: 7px 3px 2px; }
-  .portal-product-copy > strong { font-size: 9px; }
-  .portal-caption { left: 7%; bottom: -8px; }
-  .portal-caption span { display: block; margin: 1px 0 0; }
-  .portal-window figcaption { font-size: 5px; bottom: 15px; left: 13px; }
-  .portal-window figcaption > span { font-size: 9px; }
-  .portal-spark-one { font-size: 23px; top: -6px; }
-}
-@media (max-width: 640px) {
-  .saga-hero-refresh { margin: 0; border: 0; border-radius: 0; background: radial-gradient(ellipse at 88% 52%, #eadff7, transparent 41%), radial-gradient(ellipse at 10% 65%, #e8f2fb, transparent 35%), #fffdf9; box-shadow: none; }
-  .saga-hero-refresh .topbar { padding-inline: 22px; min-height: 68px; }
-  .saga-hero-refresh .v21-hero-grid { display: grid; grid-template-columns: minmax(0, 1fr); gap: 14px; min-height: 0; padding: 20px 22px 9px; }
-  .saga-hero-refresh .v21-hero-copy { display: block; width: 100%; max-width: none; order: 0; }
-  .saga-hero-refresh .hero-desktop-text { display: none; }
-  .saga-hero-refresh .hero-mobile-text { display: inline; }
-  .saga-hero-refresh .v21-hero-copy .section-kicker { display: flex; font-size: 9px; line-height: 1.5; letter-spacing: .12em; gap: 7px; margin: 0 0 10px; }
-  .hero-kicker-star { font-size: 15px; }
-  .saga-hero-refresh .v21-hero-copy h1 { font-size: clamp(36px, 9.55vw, 55px); line-height: 1.19; letter-spacing: -.065em; margin: 0 0 12px; }
-  .saga-hero-refresh .v21-hero-copy > .hero-lede { font-size: 12px; line-height: 1.8; margin: 0; max-width: 430px; }
-  .hero-wide-break { display: none; }
-  .saga-hero-refresh .hero-question { max-width: none; padding: 5px; margin: 16px 0 0; box-shadow: 0 9px 23px #785a890d; }
-  .saga-hero-refresh .hero-question input { min-height: 44px; font-size: 16px; padding: 10px 12px; }
-  .saga-hero-refresh .hero-question button { min-height: 44px; font-size: 11px; padding: 11px 15px; }
-  .saga-hero-refresh .hero-question button > span { margin-left: 4px; }
-  .saga-hero-refresh .hero-prompt-list { margin-top: 8px; gap: 7px; }
-  .saga-hero-refresh .hero-prompt-list button { min-height: 44px; padding: 9px 11px; font-size: 10px; }
-  .saga-hero-refresh .hero-prompt-list button > span { margin-left: 4px; }
-  .saga-hero-refresh .hero-honesty { margin: 8px 0 0; font-size: 10px; line-height: 1.65; max-width: 390px; }
-  .saga-portal { order: 1; height: 220px; width: 100%; max-width: 450px; margin: 0 auto; }
-  .portal-window { inset: 0 12% 21px; border-width: 5px; border-radius: 46% 46% 16px 16px; box-shadow: 0 16px 34px #68519525, 0 0 0 1px #e9dff1; }
-  .portal-window > img { object-position: 60% 43%; }
-  .portal-window figcaption { font-size: 9px; bottom: 12px; left: 15px; letter-spacing: .06em; }
-  .portal-window figcaption > span { font-size: 10px; }
-  .portal-orbit-one { top: 24%; left: 1%; width: 98%; height: 62%; }
-  .portal-orbit-two { top: 0; left: 9%; width: 80%; height: 94%; }
-  .portal-spark-one { top: -7px; right: 9%; font-size: 22px; }
-  .portal-spark-two { bottom: 9px; left: 5%; font-size: 19px; }
-  .portal-tag { min-height: 44px; padding: 7px 9px; gap: 6px; border-radius: 12px; box-shadow: 0 7px 18px #69557e19; }
-  .portal-tag-icon { width: 23px; height: 25px; flex-basis: 23px; border-radius: 8px; font-size: 18px; }
-  .portal-tag small { font-size: 7px; line-height: 1.3; letter-spacing: .04em; }
-  .portal-tag strong { font-size: 11px; margin-top: 3px; }
-  .portal-tag strong b { font-size: 10px; padding-left: 3px; }
-  .portal-tag-relationship { top: 25%; left: 0; }
-  .portal-tag-dream { top: 10%; right: 0; }
-  .portal-tag-wisdom { bottom: 18%; left: 2%; }
-  .portal-product { display: flex; align-items: center; width: 158px; right: 1%; bottom: 14px; border-width: 4px; border-radius: 12px; transform: rotate(4deg); }
-  .portal-product > img { flex: 0 0 55px; width: 55px; height: 58px; border-radius: 8px; object-position: 57% 45%; }
-  .portal-product-copy { min-width: 0; padding: 4px 6px; }
-  .portal-product-copy > small { font-size: 9px; }
-  .portal-product-copy > strong { font-size: 10px; line-height: 1.35; margin: 3px 0 4px; }
-  .portal-product-copy > span { font-size: 9px; }
-  .portal-product-copy b { font-size: 10px; }
-  .portal-caption { left: 12%; bottom: -3px; font-size: 9px; letter-spacing: .06em; }
-  .portal-caption span { font-size: 9px; margin-left: 5px; }
-  .hero-products { padding: 0 22px 26px; }
-  .hero-products-heading { padding-top: 8px; margin-bottom: 4px; gap: 10px; }
-  .hero-products-heading p, .hero-products-heading a { font-size: 11px; }
-  .hero-products-heading a { gap: 7px; }
-  .hero-product-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
-  .hero-product-link { gap: 8px; min-height: 74px; padding: 9px 8px; border-radius: 13px; }
-  .hero-product-thumb { width: 35px; height: 42px; flex-basis: 35px; border-radius: 8px; }
-  .hero-product-name strong { font-size: 11px; }
-  .hero-product-name small { font-size: 10px; margin-top: 4px; }
-  .hero-product-arrow { font-size: 10px; }
-}
-@media (max-width: 359px) {
-  .saga-hero-refresh .topbar { padding-inline: 18px; }
-  .saga-hero-refresh .v21-hero-grid { padding-inline: 18px; padding-top: 20px; }
-  .saga-hero-refresh .v21-hero-copy h1 { font-size: 36px; }
-  .saga-hero-refresh .hero-prompt-list { gap: 5px; }
-  .saga-hero-refresh .hero-prompt-list button { padding-inline: 9px; }
-  .saga-hero-refresh .hero-question input { padding-inline: 9px; font-size: 16px; }
-  .saga-hero-refresh .hero-question button { padding-inline: 12px; }
-  .saga-portal { height: 220px; }
-  .portal-product { width: 143px; }
-  .portal-product > img { width: 48px; flex-basis: 48px; }
-  .portal-tag { gap: 5px; padding-inline: 7px; }
-  .portal-tag-icon { width: 20px; flex-basis: 20px; }
-  .hero-products { padding-inline: 18px; }
-  .hero-product-link { gap: 6px; padding-inline: 7px; }
-  .hero-product-thumb { width: 30px; flex-basis: 30px; }
-  .hero-product-name strong { font-size: 11px; }
-}
-@media (prefers-reduced-motion: reduce) {
-  .saga-hero-refresh *, .saga-hero-refresh *::before, .saga-hero-refresh *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
-  .saga-hero-refresh :is(.portal-tag, .portal-product, .hero-product-link):hover { translate: none; }
-}
+@media(max-width:374px){.world-hall.v21-hero{min-height:635px}.hall-copy{top:21.5%}.hall-copy h1{font-size:31px}.hall-description{font-size:9px;max-width:280px}.hall-subtitle{font-size:10px}.hall-actions{margin-top:17px}.hall-portals{bottom:181px;left:20px;right:20px;gap:8px}.hall-medallion{width:50px;height:50px}.hall-mobile-more{bottom:144px}.hall-inspiration{height:112px;bottom:18px;left:18px;right:18px}.hall-copy .hall-button{padding:10px 16px}.hall-world-card h3{font-size:17px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important;animation-iteration-count:1!important}}
