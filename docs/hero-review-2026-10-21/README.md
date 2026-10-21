@@ -53,3 +53,13 @@
 - 仓库现有 `npm run test:discovery` 已通过：28 个页面、392 项元数据断言、14 组语言对应、28 个 sitemap URL、内部资源链接，以及 4 份 ASO 草稿的字段边界。草稿没有提交到应用商店。
 
 原来的八世界规划、完整产品路由与通用 AI 接入属于后续范围；本次不把这些规划标成已经完成。
+
+## 正式发布核验
+
+[PR #3](https://github.com/minyajing-rgb/saga1001-world-hall/pull/3) 已合并为 `4a2dc2721c5a6cc9c85f06712d3fe79620c6a48d`。[GitHub Pages 发布](https://github.com/minyajing-rgb/saga1001-world-hall/actions/runs/39567293498) 状态为成功。
+
+重新打开 https://saga1001.com/ 后，浏览器确认：新版 hero 存在，旧 `.v21-orb` 不存在；主场景及全部首屏产品图片加载成功，六个产品入口存在；`hero.css` 与入口脚本均为 `20261021-hero-1`，OG 图指向本次实际页面截图。
+
+![正式官网发布后实拍](live-desktop.jpg)
+
+本节及正式站截图保存在发布核验分支；生产网站代码与 PR #3 的已合并版本一致。
