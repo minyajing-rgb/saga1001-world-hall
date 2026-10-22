@@ -11,12 +11,12 @@ export const brand={
 };
 export const products=[
  {id:'bunny',slug:'bunny-crystal-oracle',name:'Bunny Crystal Oracle',url:'https://bunny.saga1001.com/',image:'product-bunny.jpg',
- title:pair('Bunny Crystal Oracle｜原创水晶神谕卡与自我反思','Bunny Crystal Oracle | Original Cards & Self-Reflection'),
+ title:pair('Bunny Crystal Oracle 兔小姐｜原创水晶神谕卡与自我反思','Bunny Crystal Oracle | Miss Bunny, Cards & Self-Reflection'),
  category:pair('水晶神谕卡 · 自我反思','Crystal oracle cards · Self-reflection'),
- description:pair('了解 Bunny Crystal Oracle 的原创水晶神谕卡、象征性提问与自我反思方向，找到独立官方网站并查看真实体验边界。','Discover Bunny Crystal Oracle, original crystal-oracle imagery and prompts for self-reflection. Find its independent website and understand the experience.'),
- intro:pair('Bunny Crystal Oracle 是以原创水晶神谕卡为入口的反思与娱乐体验。它用牌面、意象和问题帮助使用者整理当下感受，适合希望通过象征性提示开启记录、关系思考或日常小仪式的人。','Bunny Crystal Oracle is a reflection and entertainment experience built around original crystal-oracle cards. Card imagery and questions offer a starting point for noticing feelings, exploring relationships and creating a personal reflection ritual.'),
+ description:pair('认识 Bunny Crystal Oracle 的原创角色兔小姐（Miss Bunny），探索原创水晶神谕卡、象征性提问与自我反思，找到独立官方网站并了解产品体验。','Meet Miss Bunny, the original character of Bunny Crystal Oracle. Explore original crystal-oracle imagery and prompts for self-reflection, and find the independent product website.'),
+ intro:pair('Bunny Crystal Oracle 是围绕原创角色兔小姐（Miss Bunny）与原创水晶神谕卡展开的反思与娱乐体验。它用牌面、意象和问题帮助使用者整理当下感受，适合希望通过象征性提示开启记录、关系思考或日常小仪式的人。','Bunny Crystal Oracle is a reflection and entertainment experience featuring its original character, Miss Bunny, and original crystal-oracle cards. Card imagery and questions offer a starting point for noticing feelings, exploring relationships and creating a personal reflection ritual.'),
  details:pair('在 SAGA 可以先了解产品，再进入 Bunny 的独立网站。卡牌是观察自己的一个视角，不替任何人决定未来，也不读取他人的真实想法。AI 相关能力、账号和付费内容请以独立产品当时的实际说明为准。','Start with this product guide, then visit the independent Bunny website. The cards provide a perspective for examining your own experience; they do not determine the future or reveal another person’s thoughts. Consult the product itself for current AI features, accounts and paid content.'),
- keywords:['Bunny Crystal Oracle','水晶神谕卡','原创神谕卡','crystal oracle cards','oracle reflection','self reflection'],
+ keywords:['Bunny Crystal Oracle','兔小姐','Miss Bunny','兔小姐水晶神谕','水晶神谕卡','原创神谕卡','crystal oracle cards','oracle reflection','self reflection'],
  faq:[pair('Bunny 是标准塔罗牌吗？','Is Bunny a standard tarot deck?'),pair('Bunny 以原创水晶神谕卡为核心，不把自己的牌组称作标准塔罗。选择时应看牌面体系、提问方式和你希望进行的反思体验。','Bunny centres on its own original crystal-oracle cards rather than presenting the deck as standard tarot. Choose an experience by its imagery, prompts and the reflection you want to explore.')]
  },
  {id:'plot',slug:'plot',name:'PLOT',url:'https://plot.saga1001.com/',image:'product-plot.jpg',

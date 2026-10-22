@@ -1,6 +1,16 @@
 # Current build and review procedure
 
-## Current implementation: World Hall V2 — 2026-10-21
+## Current implementation: official Miss Bunny correction — 2026-10-22
+
+The Bunny character in the supplied blueprint was not the official product IP. All active Bunny visuals now use the current purple-costume Miss Bunny assets from `bunny.saga1001.com`: the PWA icon for circular entrances and official landscape art for the feature, detail hero and gallery. Asset URLs and hashes are recorded in [the asset audit](../docs/bunny-brand-audit-2026-10-22/assets.md). Existing product screenshots remain labelled as website previews.
+
+The homepage feature and detail gallery previously retained their HTML image heights instead of resizing with their widths. Explicit `height:auto`, landscape ratios and complete-image fitting fix the oversized image blocks. The Bunny detail now uses normal document flow, with text below the image. The feature-to-products gap is 64px on desktop and 40px on mobile. The eight world themes and six featured product cards remain distinct.
+
+Brand copy, Chinese/English product introductions, the “兔小姐 / Miss Bunny” search terms, realm page titles and Bunny section-navigation state were corrected together. Active CSS no longer falls back to the unrelated white-rabbit image. Asset versions were bumped to avoid retaining the old visual bundle.
+
+The current sharing preview is `assets/saga1001-worldhall-v2-preview-20261022.jpg`, a 1348×926 JPEG captured from the actual managed-browser page. Open Graph and Twitter metadata point to this versioned file; historical previews remain only as history. The complete audit and validation record is in [the 2026-10-22 review](../docs/bunny-brand-audit-2026-10-22/README.md).
+
+## Historical implementation: World Hall V2 — 2026-10-21
 
 This revision follows the user's supplied World Hall blueprint. The original `assets/world-hall-hero.jpg` now fills the panoramic hero, with overlaid navigation, the two-line “A Kinder World / A Brighter You” heading, two primary actions and eight circular world entrances. Mobile shows four quick entrances, a link to all eight worlds, a Daily Inspiration card and the five-item bottom navigation. The six existing product identities and destinations remain available below the world directory.
 
@@ -13,7 +23,7 @@ The eight themes are Portal, Bunny, Buddhism, Bible, Tarot, Astrology, Healing a
 - Three mobile issues were corrected: Search was added to the menu; bottom-navigation links explicitly use a centered vertical layout through 767px; companion-page mobile styling was extended to 767px with explicit header alignment and bottom-navigation clearance.
 - Browser checks covered widths of 360, 390, 720 and 768px. Searching for “Bunny” returned one world and one product; a Chat starter button produced its scripted reply; selecting Community “Latest” changed the displayed content. These are the checks for this revision; the larger historical matrix below belongs to the earlier source.
 
-The current sharing preview is `assets/saga1001-worldhall-v2-preview-20261021.jpg`, captured at 1200×800 from the actual rendered page in the managed browser preview. This taller viewport retains the complete world-entrance row. Open Graph and Twitter metadata use this versioned file. The earlier `assets/saga1001-search-preview-20261021.jpg` remains as historical artwork.
+The sharing preview for that revision was `assets/saga1001-worldhall-v2-preview-20261021.jpg`, captured at 1200×800 from the actual rendered page in the managed browser preview. It retains the previous, incorrect Bunny entrance and must not be reused for current sharing metadata. The earlier `assets/saga1001-search-preview-20261021.jpg` is also historical artwork.
 
 ## Historical homepage hero refresh — earlier on 2026-10-21
 
