@@ -7,6 +7,14 @@
 - [繁體中文：16集故事聖經 + 第一集劇本](Queen_of_Vegas_V9.1_Chinese_Complete.md)
 - [English: season-one story bible + pilot screenplay](Queen_of_Vegas_V9.1_English_Complete.md)
 
+
+## Editable Word downloads
+
+- [繁體中文 Word — full story bible + first episode (text-only)](Queen_of_Vegas_V9.1_Chinese_Text.docx)
+- [English Word — complete story bible + pilot (text-only)](Queen_of_Vegas_V9.1_English_Text.docx)
+
+The Word files contain the complete original V9.1 text with headings for easy editing. They deliberately omit images to keep downloads smaller. The Markdown files are the full preserved source text.
+
 ## Individual original source files
 
 - [01 — 中文第一季16集故事聖經](01_Story_Bible_ZH-Hant.md)
