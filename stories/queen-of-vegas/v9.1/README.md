@@ -30,3 +30,33 @@ The Word files contain the complete original V9.1 text with headings for easy ed
 To download: open a file, click **Raw / Download raw file**, or use the raw link above. Markdown files open in VS Code and any text editor; they preserve all original words.
 
 **Status:** Contains full 16-episode story architecture and the pilot script, but not 16 finished shooting scripts or a KDP-submitted novel. Fictional entities and transactions. The folder is public for review at the user's request.
+
+## English-only production diagrams (editorial revision 2026-11-09)
+
+The 2026-11-09 illustrated Word/PDF editorial proof replaces previous cropped portrait strips and Chinese-labeled figures. The diagrams below have **English-only headings** and do not include unverified numerical ROI claims. They are concept/industry research, not a real property floor plan.
+
+### INTEGRATED RESORT | FLOOR ZONES
+
+![INTEGRATED RESORT | FLOOR ZONES](figures/01_resort_floor.svg)
+
+### EGM | EQUIPMENT LIFECYCLE
+
+![EGM | EQUIPMENT LIFECYCLE](figures/02_egm_lifecycle.svg)
+
+### RESORT | REVENUE STREAMS
+
+![RESORT | REVENUE STREAMS](figures/03_revenue_streams.svg)
+
+### CAPITAL | RIGHTS | OPERATIONS
+
+![CAPITAL | RIGHTS | OPERATIONS](figures/04_capital_and_rights.svg)
+
+### GLOBAL CASINO TALENT
+
+![GLOBAL CASINO TALENT](figures/05_talent_flow.svg)
+
+### GAMING SECTOR | CLASSIFICATION
+
+![GAMING SECTOR | CLASSIFICATION](figures/06_gaming_taxonomy.svg)
+
+**Publishing gate:** The V9.1 corpus remains a 16-episode story bible plus pilot screenplay, **not** the completed 16-episode prose novel. Do not mark the Kindle manuscript submitted until a KDP confirmation is observed.
