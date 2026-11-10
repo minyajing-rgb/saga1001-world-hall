@@ -1,0 +1,18 @@
+{
+  "art": "assets/asset-manifest.json",
+  "animation": [
+    "13-family-loop.mp4",
+    "14-family-loop.gif",
+    "15-creative-process.mp4"
+  ],
+  "site": [
+    "journal-zh",
+    "journal-en"
+  ],
+  "social": [
+    "captions-zh.txt",
+    "captions-en.txt",
+    "caption-x.txt"
+  ],
+  "verification": "QA.md"
+}

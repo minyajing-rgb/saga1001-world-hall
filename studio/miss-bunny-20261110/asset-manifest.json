@@ -1,0 +1,122 @@
+[
+  {
+    "name": "01-first-style-exploration.jpg",
+    "bytes": 244035,
+    "sha256": "be3f35f13dbab5bd629a7bf9b5b2c3ef0a18872370e04a785fe32c16f4de9ed6"
+  },
+  {
+    "name": "01-first-style-exploration.png",
+    "bytes": 1522365,
+    "sha256": "233013e1628ad6c4dda4a6ab728a754de860507e3d82604a0c9d85c4d4ead675"
+  },
+  {
+    "name": "02-first-line-art.jpg",
+    "bytes": 148043,
+    "sha256": "d0713d94103460b84e158b85710a89a99c45855f0974b4c060ba53ff4e733a21"
+  },
+  {
+    "name": "02-first-line-art.png",
+    "bytes": 1138866,
+    "sha256": "17936e1fe9f18babc62154e06d4d3e35823fd079717b84cb3a3b3552371cec00"
+  },
+  {
+    "name": "03-approved-first-color.jpg",
+    "bytes": 156214,
+    "sha256": "737919fed06d87024b7010a8dffebac5e10f83890ea4f592bfef394e3ea63a63"
+  },
+  {
+    "name": "03-approved-first-color.png",
+    "bytes": 1199999,
+    "sha256": "4737b32f092499f9cd25c9da11f20cf53dbbccf017989de1661470ca6cb232d7"
+  },
+  {
+    "name": "04-chibi-exploration-not-selected.jpg",
+    "bytes": 325538,
+    "sha256": "fa8e8d783363a21457b93192d1552ad56edb4d02c39c82f35e0c904109bb4dc9"
+  },
+  {
+    "name": "04-chibi-exploration-not-selected.png",
+    "bytes": 1788623,
+    "sha256": "83e4bfe439ac2051bf9131e7b66adc483aee90dc263e3e64c08602ef46640b7b"
+  },
+  {
+    "name": "05-chibi-line-not-selected.jpg",
+    "bytes": 195302,
+    "sha256": "82ec1987546b2b5b755371e96b980188ced22c45536f98e930f888c3bca940cb"
+  },
+  {
+    "name": "05-chibi-line-not-selected.png",
+    "bytes": 1194524,
+    "sha256": "85f4c5822a9dd778de49e5dd21faaed005d194425a456277d7d549c4b3e7681b"
+  },
+  {
+    "name": "06-chibi-color-not-selected.jpg",
+    "bytes": 217897,
+    "sha256": "7dc262e82911202db557bcf27ff4feb328fd2455e526d0180d3d4331849bed28"
+  },
+  {
+    "name": "06-chibi-color-not-selected.png",
+    "bytes": 1325419,
+    "sha256": "2907367e159ae33f9189b637724366e4cb9d5a51425636eb572d05a7de3f19c9"
+  },
+  {
+    "name": "07-family-sprite-atlas.png",
+    "bytes": 1820626,
+    "sha256": "7d06fd33935693232b82b0109053fee59493ff392ae830c38dd0503e7c556483"
+  },
+  {
+    "name": "08-family-sketch.jpg",
+    "bytes": 365124,
+    "sha256": "706689714531933cd1936d7412190acc6f2e94f9a873bb92e7f94e39b53ac2bb"
+  },
+  {
+    "name": "08-family-sketch.png",
+    "bytes": 2312833,
+    "sha256": "2d4647e7deedb52ef17f447f021684ae03f79cda1a5ea2cec4051aefcb8382a2"
+  },
+  {
+    "name": "09-castle-seated-study.jpg",
+    "bytes": 623208,
+    "sha256": "14b6c1537503c1455e9cd81f7e63c91484e22ab888f9b556a1af5744c4b823c4"
+  },
+  {
+    "name": "09-castle-seated-study.png",
+    "bytes": 3030362,
+    "sha256": "71039b1ff1081ee02d21beb59c5ed27c0e84c8ae3f4da41365dd3d19a30d3e47"
+  },
+  {
+    "name": "10-castle-standing-final.jpg",
+    "bytes": 594483,
+    "sha256": "fb47bc1f5f3d5df2dfb2b643ca8ddb9393a9781ba13021c6fc58e0de85e51488"
+  },
+  {
+    "name": "10-castle-standing-final.png",
+    "bytes": 2830655,
+    "sha256": "4d99ccaea407e4d889e73bab06e03b0ababc430aa7646ea1ead36419b9d0f68c"
+  },
+  {
+    "name": "11-current-book-cover-reference.jpg",
+    "bytes": 697786,
+    "sha256": "d24009ebabcd471c035d26eba4d6a4a252e60c75bf392751929ccb831a443009"
+  },
+  {
+    "name": "12-family-portrait.jpg",
+    "bytes": 174362,
+    "sha256": "ef7626e201ad9ad9ec34771815528a1ba14469969e5c50391242d10e46cb95f5"
+  },
+  {
+    "name": "13-family-loop.mp4",
+    "bytes": 765366,
+    "sha256": "3269cc856e49396561f860ae1fc14dccd20aa57d16dc5bebe58201fa34245e36"
+  },
+  {
+    "name": "14-family-loop.gif",
+    "bytes": 4058352,
+    "sha256": "48c270d4cfd25566e00811a727c99305a530ae203d5a66e7b92e719d3ee26178"
+  },
+  {
+    "name": "15-creative-process.mp4",
+    "bytes": 3749417,
+    "sha256": "2250d50a4444d685547391308f9bd5f24888b4cc034e00a012eb97c46adecd20"
+  }
+]

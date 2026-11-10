@@ -1,0 +1,2 @@
+# Scoped editorial UI
+White, navy, vivid violet, readable large serif titles, 1100px content width; 2-column desktop hero/media, single-column mobile at 700px. Preserve complete art with contain; no destructive image crop. Existing first Bunny direction, simple eyes/pupils, no ornate manga headdress. Video controls and readable labels, no autoplay, reduced-motion respect. Screenshots and interactions must be checked at desktop and 390px. New UI is scoped proposal derived from existing story-page design.

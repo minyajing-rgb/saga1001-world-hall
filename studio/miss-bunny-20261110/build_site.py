@@ -1,0 +1,100 @@
+from pathlib import Path
+import json, html, shutil
+R=Path(__file__).parent
+S=R/'site'; S.mkdir(exist_ok=True)
+A='/assets/bunny-process/2026-11-10/'
+ZH='/stories/miss-bunny/creative-process/'
+EN='/en/stories/miss-bunny/creative-process/'
+cn="""Bunny 的创作手记：从几笔线条，长出一个世界。
+
+这次，我们让同一个兔小姐在不同画法里相遇：线稿、sketch、少色平涂、2D、水彩，再到完整插画。
+
+反复打版之后，我更喜欢最初那种简洁、国际化的感觉：白色卷发、长兔耳、紫色披风，眼睛只留下简单线条和眼珠。把这些特征留住，她就能走进书页、贴纸和新的故事。
+
+于是有了这张画法全家福，也有了站在欧洲童话城堡前、认真画 Bunny 的小女生。城堡写生是一幅概念插画；动画记录的是这次视觉探索。
+
+创作方向：Joyce Mi；AI 辅助视觉探索与动画合成。
+完整过程：https://saga1001.com/stories/miss-bunny/creative-process/
+
+#兔小姐 #原创IP #简笔画 #绘本创作 #角色设计"""
+en="""One Bunny. Many ways to create.
+
+Our latest Miss Bunny studio study moves from a few simple lines to pencil sketches, spot colour, 2D, watercolour and finished illustration.
+
+After exploring a more elaborate direction, I returned to the first silhouette: white flowing hair, long ears, a violet cape, and simple eyes. Those familiar details let the same character travel between books, stationery and new story worlds.
+
+Meet her visual family, then follow a little artist imagining Bunny in front of a European fairy-tale castle. The castle scene is concept art.
+
+Creative direction: Joyce Mi. AI-assisted visual development and composited animation.
+Explore the studio journal: https://saga1001.com/en/stories/miss-bunny/creative-process/
+
+#MissBunny #CharacterDesign #PictureBook #VisualDevelopment"""
+x="""One Bunny, many ways to create: sketch, spot colour, 2D and watercolour. Returning to simple eyes and a familiar silhouette. A little studio journey from a few lines to a fairy-tale world. Creative direction: Joyce Mi. #MissBunny #CharacterDesign"""
+(R/'captions-zh.txt').write_text(cn,encoding='utf-8')
+(R/'captions-en.txt').write_text(en,encoding='utf-8')
+(R/'caption-x.txt').write_text(x,encoding='utf-8')
+(R/'caption-wechat-moments.txt').write_text("""今天把 Bunny 的创作过程整理成了一本小小的视觉手记。线稿、sketch、几块亮色、水彩，各有各的可爱。我还是喜欢最初那双简单的眼睛，也喜欢她站在童话世界入口的样子。全家福动画和城堡写生概念图都在这里：\nhttps://saga1001.com/stories/miss-bunny/creative-process/""",encoding='utf-8')
+(R/'caption-xiaohongshu.txt').write_text("标题：几笔线条，画出兔小姐的童话世界\n\n"+cn,encoding='utf-8')
+(R/'caption-wechat-channels.txt').write_text("标题：Bunny 从 sketch 到童话城堡\n\n同一个兔小姐，六种画法齐聚。跟着线稿、少色和水彩，看看这个角色怎样一步步长出自己的世界。\n创作方向：Joyce Mi；AI 辅助视觉探索与动画合成。\n#兔小姐 #原创角色 #绘本创作",encoding='utf-8')
+css="""
+:root{--ink:#141831;--muted:#697087;--violet:#793fe0;--line:#e9e7f2;--paper:#fff}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,'PingFang SC','Microsoft YaHei',sans-serif;line-height:1.75}a{color:inherit;text-underline-offset:5px}a:focus-visible,summary:focus-visible,video:focus-visible{outline:3px solid var(--violet);outline-offset:5px}header{max-width:1200px;margin:auto;padding:24px 32px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--line);gap:24px}header>a{font:24px Georgia,serif;letter-spacing:.08em;text-decoration:none}nav{display:flex;gap:24px;font-size:13px}main{max-width:1150px;padding:0 32px;margin:auto}.hero{padding:72px 0 44px;display:grid;grid-template-columns:1.1fr 1fr;align-items:center;gap:38px}.eyebrow{font-size:11px;letter-spacing:.18em;color:var(--violet);font-weight:bold;text-transform:uppercase}h1{font-family:Georgia,'Songti SC',serif;font-size:clamp(40px,5vw,66px);font-weight:500;line-height:1.16;letter-spacing:-.035em;margin:18px 0 24px}h2{font:500 clamp(28px,3vw,40px)/1.3 Georgia,'Songti SC',serif;margin:14px 0 20px}p{max-width:760px}.lead{color:var(--muted);font-size:17px;line-height:1.9}.hero img{width:100%;display:block}.actions{display:flex;gap:12px;flex-wrap:wrap;margin:24px 0}.button{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:9px 18px;border:1px solid var(--line);border-radius:30px;text-decoration:none;font-size:13px}.button.primary{background:var(--ink);color:#fff;border-color:var(--ink)}section.journal{border-top:1px solid var(--line);padding:48px 0 56px}.split{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:center}.media{width:100%;height:auto;display:block;border-radius:16px;background:#fff}.large{margin-top:26px}.note,figcaption{color:var(--muted);font-size:13px}.pills{display:flex;gap:8px;flex-wrap:wrap;margin:24px 0}.pills span{padding:6px 12px;background:#f5f1ff;border-radius:30px;font-size:13px}figure{margin:0}.archive{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;margin-top:24px}.archive img{width:100%;height:260px;object-fit:contain;background:#fff}.archive figcaption{padding-top:12px}details{padding:18px 0;border-bottom:1px solid var(--line)}summary{cursor:pointer;font-weight:bold;min-height:44px;padding-top:8px}pre{white-space:pre-wrap;font-family:inherit;font-size:14px;line-height:1.9;color:var(--muted)}footer{padding:32px;text-align:center;border-top:1px solid var(--line);font-size:12px;color:var(--muted)}@media(max-width:700px){header{padding:20px;align-items:flex-start}header>a{font-size:21px}nav{gap:12px;font-size:12px}main{padding:0 22px}.hero{padding-top:38px;grid-template-columns:1fr;gap:8px}.hero img{max-height:390px;object-fit:contain}h1{font-size:43px}.split,.archive{grid-template-columns:1fr}.split{gap:22px}.archive img{height:auto}section.journal{padding:32px 0 38px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+"""
+def page(eng=False):
+ route=EN if eng else ZH
+ other=ZH if eng else EN
+ text=lambda z,e:e if eng else z
+ title=text('从几笔线条，<br>长出一个世界。','A few lines.<br>A whole world.')
+ desc=text('兔小姐的视觉创作手记：从简笔画、草图和少色 2D，到水彩、完整插画与全家福动画。','The Miss Bunny studio journal: simple lines, pencil sketches, spot colour, 2D, watercolour and a moving visual family.')
+ archive=[
+ ('01-first-style-exploration.jpg',text('第一轮画法探索 · 当前方向的起点','First visual exploration · the starting point')),
+ ('04-chibi-exploration-not-selected.jpg',text('第二轮 Chibi 探索 · 保留为过程稿，后续回到第一版','Chibi exploration · retained as a study; the first direction was selected')),
+ ('02-first-line-art.jpg',text('第一版独立线稿','First standalone line art')),
+ ('03-approved-first-color.jpg',text('当前采用的简洁少色方向','Selected simple spot-colour direction')),
+ ('05-chibi-line-not-selected.jpg',text('第二轮线稿 · 探索稿','Second line-art exploration')),
+ ('06-chibi-color-not-selected.jpg',text('第二轮色稿 · 探索稿','Second colour exploration')),
+ ('09-castle-seated-study.jpg',text('场景初稿 · 坐姿探索','Early scene study · seated pose')),
+ ('11-current-book-cover-reference.jpg',text('当前书封参考 · 精细插画方向','Current book-cover reference · detailed illustration'))
+ ]
+ gallery=''.join(f'<figure><a href="{A+f}" target="_blank" rel="noopener"><img loading="lazy" src="{A+f}" alt="{html.escape(c)}"></a><figcaption>{c}</figcaption></figure>' for f,c in archive)
+ journal=text('创作手记','Studio journal')
+ return f'''<!doctype html><html lang="{'en' if eng else 'zh-CN'}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{text('兔小姐创作过程','Miss Bunny creative process')} · SAGA1001</title><meta name="description" content="{desc}"><link rel="canonical" href="https://saga1001.com{route}"><link rel="alternate" hreflang="zh-Hans" href="https://saga1001.com{ZH}"><link rel="alternate" hreflang="en" href="https://saga1001.com{EN}"><meta property="og:title" content="{text('从几笔线条，长出一个世界','A few lines. A whole world.')} · Miss Bunny"><meta property="og:description" content="{desc}"><meta property="og:type" content="article"><meta property="og:url" content="https://saga1001.com{route}"><meta property="og:image" content="https://saga1001.com{A}12-family-portrait.jpg"><meta name="twitter:card" content="summary_large_image"><style>{css}</style></head><body>
+<header><a href="/">SAGA1001</a><nav><a href="/stories/miss-bunny/">{text('兔小姐的故事','Story sample (中文)')}</a><a href="{other}" lang="{'zh-CN' if eng else 'en'}">{'中文' if eng else 'English'}</a></nav></header>
+<main><section class="hero"><div><p class="eyebrow">MISS BUNNY / {journal} / 2026.11</p><h1>{title}</h1><p class="lead">{desc}</p><div class="actions"><a class="button primary" href="#film">{text('看创作短片','Watch the studio film')} ↘</a><a class="button" href="#sketch">{text('翻开草图','Explore the sketches')}</a></div><p class="note">Creative direction · Joyce Mi</p></div><img src="{A}03-approved-first-color.jpg" alt="{text('当前采用的简洁 Bunny：白发、兔耳、紫披风与简单眼睛','Selected simple Miss Bunny, with white hair, long ears, a violet cape and simple eyes')}"></section>
+<section class="journal"><p class="eyebrow">01 / THE SAME BUNNY</p><h2>{text('简化细节，留下她。','A familiar face, in every medium.')}</h2><p class="lead">{text('反复打版之后，我们回到第一版简洁、国际化的方向。长兔耳、白色波浪头发、紫色披风，加上简单的眼形与眼珠，成为这套画法共同的辨识特征。','After exploring a more elaborate design, we returned to the first, simpler direction. Long ears, white flowing hair, a violet cape, and simple eyes keep Miss Bunny recognisable across media.')}</p><div class="pills"><span>{text('简单眼形＋眼珠','Simple eye contour + pupil')}</span><span>{text('大色块','Clear colour blocks')}</span><span>{text('充足留白','Generous white space')}</span><span>{text('同一角色，多种媒介','One character, many media')}</span></div></section>
+<section class="journal split" id="family"><div><p class="eyebrow">02 / THE VISUAL FAMILY</p><h2>{text('把不同画法，放进一张全家福。','Meet her visual family.')}</h2><p class="lead">{text('同一个 Bunny，以经典少色、铅笔、平涂、2D、水彩与完整插画的面貌相聚。轻轻起伏、摇摆的循环动画，让这组画法一起活起来。','Classic colour, pencil, flat shapes, 2D, watercolour and a finished storybook treatment gather in one portrait. A gently bobbing and swaying loop brings the visual family together.')}</p><div class="actions"><a class="button" href="{A}13-family-loop.mp4" download>{text('下载全家福 MP4','Download family MP4')}</a><a class="button" href="{A}14-family-loop.gif" download>GIF ↓</a></div></div><video class="media" controls playsinline muted loop preload="metadata" poster="{A}12-family-portrait.jpg" aria-label="{text('Bunny 不同画法全家福循环动画','Miss Bunny visual-family loop')}"><source src="{A}13-family-loop.mp4" type="video/mp4">{text('请下载 MP4 播放。','Please download the MP4 to play.')}</video></section>
+<section class="journal" id="sketch"><p class="eyebrow">03 / PENCIL FIRST</p><h2>{text('一支铅笔，先把故事画出来。','Start with a pencil.')}</h2><p class="lead">{text('保留试探的线、轻轻的阴影和不同的动作。草图让我们先看清角色的轮廓、表情与关系，再决定颜色和质感。','Exploratory lines, light shading and different gestures help us find the silhouette, expression and relationships before choosing colour and texture.')}</p><figure class="large"><img class="media" loading="lazy" src="{A}08-family-sketch.jpg" alt="{text('六个 Bunny 画法与动作的铅笔全家福','A pencil family portrait of six Miss Bunny visual and pose studies')}"><figcaption>{text('Bunny 全家福 · sketch 概念稿','The Bunny visual family · pencil concept study')}</figcaption></figure></section>
+<section class="journal"><p class="eyebrow">04 / A WORLD TO DRAW</p><h2>{text('城堡很大，好奇心也很大。','A castle, a sketch, a little imagination.')}</h2><p class="lead">{text('小女生站在画架前，画下自己的 Bunny。远处的城堡、山与湖，把几笔线条带进一个更大的故事世界。','A little artist stands at her easel, drawing Bunny. A distant castle, mountains and a lake carry those few lines into a much larger story world.')}</p><figure class="large"><img class="media" loading="lazy" src="{A}10-castle-standing-final.jpg" alt="{text('站立的小女生在画架上画 Bunny，背景是欧洲童话城堡、山与湖','A standing little artist draws Bunny in front of a European fairy-tale castle, mountains and lake')}"><figcaption>{text('德国巴伐利亚童话城堡意象的概念插画 · 并非实景旅行记录','Concept art inspired by Bavarian fairy-tale castle imagery')}</figcaption></figure></section>
+<section class="journal" id="film"><p class="eyebrow">05 / THE STUDIO FILM</p><h2>{text('从全家福，到一个新世界。','From a visual family to a story world.')}</h2><video class="media" controls playsinline preload="metadata" poster="{A}10-castle-standing-final.jpg" aria-label="{text('18秒 Bunny 创作过程短片','18-second Miss Bunny creative-process film')}"><source src="{A}15-creative-process.mp4" type="video/mp4">{text('请下载 MP4 播放。','Please download the MP4 to play.')}</video><div class="actions"><a class="button primary" href="{A}15-creative-process.mp4" download>{text('下载 18 秒创作短片','Download the 18-second film')} ↓</a></div><p class="note">{text('静音短片 · 全家福 → sketch → 城堡写生 → 回到角色','Silent film · visual family → sketch → castle scene → character')}</p></section>
+<section class="journal"><p class="eyebrow">06 / THE EXPLORATIONS</p><h2>{text('创作中的每一次试探。','The studies along the way.')}</h2><p class="lead">{text('这里保留了不同阶段的探索稿。第二轮更精细的 Chibi 画法作为过程记录；目前后续打版以第一轮简洁方向为基础。','These studies document the choices along the way. The more elaborate second Chibi direction remains part of the archive; the first, simpler direction is the current basis for further work.')}</p><details><summary>{text('展开历次画稿与封面参考','Open the art archive and cover reference')}</summary><div class="archive">{gallery}</div></details></section>
+<section class="journal"><p class="eyebrow">STUDIO NOTES</p><h2>{text('把过程，也分享给你。','Share the process, too.')}</h2><p class="lead">{text('创作方向与角色取舍由 Joyce Mi 确定。本页记录 AI 辅助视觉探索与代码合成动画；不同画法仍在持续发展。','Creative direction and character choices by Joyce Mi. This journal records AI-assisted visual development and code-composited animation. The visual family continues to evolve.')}</p><details><summary>{text('中文分享文字','Chinese sharing caption')}</summary><pre>{html.escape(cn)}</pre></details><details><summary>English sharing caption</summary><pre>{html.escape(en)}</pre></details><div class="actions"><a class="button" href="/stories/miss-bunny/">{text('阅读兔小姐的故事','Read the story sample (Chinese)')} ↗</a><a class="button" href="/products/bunny-crystal-oracle/">{text('探索 Bunny 原创世界','Explore the Bunny world')} ↗</a></div></section></main><footer>© 2026 Joyce Mi · SAGA1001 · Miss Bunny / Studio journal</footer></body></html>'''
+for eng,route in [(False,ZH),(True,EN)]:
+ p=S/route.strip('/')/'index.html';p.parent.mkdir(parents=True,exist_ok=True);p.write_text(page(eng),encoding='utf-8')
+for filename in ['index.html','en/index.html','stories/miss-bunny/index.html','stories/miss-bunny/zh-hant/index.html']:
+ old=(R/'original'/filename).read_text()
+ eng=filename.startswith('en/')
+ link=EN if eng else ZH
+ label='Miss Bunny: from sketch to story world' if eng else '兔小姐创作手记：从 sketch 到童话世界'
+ block=f'<section aria-label="{label}" style="max-width:1100px;margin:24px auto;padding:22px 28px;background:#fff;border:1px solid #e9e7f2;border-radius:18px;display:flex;gap:20px;align-items:center;justify-content:space-between;flex-wrap:wrap"><div><small style="color:#793fe0;letter-spacing:.1em">MISS BUNNY · STUDIO JOURNAL</small><p style="margin:6px 0;font-size:18px">{label}</p></div><a href="{link}" style="display:inline-flex;min-height:44px;align-items:center;padding:10px 18px;border-radius:30px;background:#141831;color:#fff;text-decoration:none">'+('Explore the process' if eng else '看创作过程')+' ↗</a></section>'
+ marker='<footer'
+ assert marker in old
+ out=old.replace(marker,block+marker,1)
+ p=S/filename;p.parent.mkdir(parents=True,exist_ok=True);p.write_text(out,encoding='utf-8')
+sm=(R/'original/sitemap.xml').read_text()
+new=''.join(f'<url><loc>https://saga1001.com{p}</loc><lastmod>2026-11-10</lastmod></url>' for p in [ZH,EN])
+(S/'sitemap.xml').write_text(sm.replace('</urlset>',new+'</urlset>'),encoding='utf-8')
+dest=S/A.strip('/');dest.parent.mkdir(parents=True,exist_ok=True)
+if not dest.exists():dest.symlink_to(R/'assets',target_is_directory=True)
+docs=R/'docs';docs.mkdir(exist_ok=True)
+specs={
+ 'INPUT_LEDGER.md': '# Inspected inputs\n- Scope/PRD: Joyce’s 2026-11-10 request in this source conversation, complete latest message.\n- Approved visual: first-colour Bunny attachment inspected; first/second studies and latest cover inspected. First direction selected, second retained as exploration. Desktop/mobile site reference: existing story page source; new page layout is a proposed scoped editorial adaptation.\n- Flows: homepage/story entry → ZH/EN journal → play/download → archive → story/home. Anonymous static page; auth/payment/form states NA.\n- Architecture: saga1001-world-hall main, GitHub Pages, existing domain/CNAME, static HTML, assets local. Inspected tree and live deployment record at source 433bcb173f07d072943b3b93eebe8adc7d6902fe.\n- Page map: two new locale routes, four scoped entry-link additions, one sitemap change.\n',
+ 'PRD.md':'# Miss Bunny studio journal\nAudience: readers and domestic/overseas creative followers. Deliver all art, moving family portrait, pencil family sketch, standing girl drawing Bunny with European castle, creative-process film, bilingual captions, source archive, existing-site publication, connected social publication. Do not alter payments, DNS, products, book availability or unrelated content. Domestic publication remains blocked by missing connections and WeChat site-safety access.\n',
+ 'UI_SPEC.md':'# Scoped editorial UI\nWhite, navy, vivid violet, readable large serif titles, 1100px content width; 2-column desktop hero/media, single-column mobile at 700px. Preserve complete art with contain; no destructive image crop. Existing first Bunny direction, simple eyes/pupils, no ornate manga headdress. Video controls and readable labels, no autoplay, reduced-motion respect. Screenshots and interactions must be checked at desktop and 390px. New UI is scoped proposal derived from existing story-page design.\n',
+ 'USER_FLOWS.md':'# Flows\n1. Existing root/story → journal; return via header.\n2. Journal ZH ⇄ EN preserving topic.\n3. Play/pause/seek family and process videos, download MP4/GIF. If unsupported, ordinary download links remain.\n4. Open/close art archive; full art links open new tab with noopener.\n5. Read/select share captions.\nNo input, account, payment, persistent state, or third-party data capture. Browser back/refresh use static URLs.\n',
+ 'ARCHITECTURE.md':'# Architecture\nTwo new static HTML documents at /stories/miss-bunny/creative-process/ and /en/stories/miss-bunny/creative-process/. Isolated inline styles; no changes to global CSS/app scripts. Assets under /assets/bunny-process/2026-11-10/. Existing root/EN home and two story locales get additive links. GitHub Pages keeps current branch and DNS. One atomic Git tree/commit with lease-safe ref movement. Reproducible motion uses timestamp-pure Pillow composition and ffmpeg; no paid services, external footage or copied music.\n',
+ 'BUILD_REQUEST.md':'# Implementation order\nReuse approved first art; generate isolated six-treatment atlas, sketch family and standing artist/castle. Render silent family loop and 18-second process film. Inspect actual encoded frames/playback. Build two locale pages with full art, history clearly labelled, captions and downloads. Validate references/metadata/locale content. Commit art and source to existing public saga1001-world-hall, preserve unrelated files and current access. Verify Pages deployment and live desktop/mobile pixels. Publish only to verified connected social accounts after duplicate check. Record exact receipts and blocked domestic/private destinations.\n',
+}
+for n,c in specs.items():(docs/n).write_text(c,encoding='utf-8')
+matrix={'locales':['zh-CN','en'],'viewports':[{'width':1440,'height':1000},{'width':390,'height':844}],'pages':[{'id':'journal-zh','route':ZH,'states':['default','archive-open','video-playing'],'locale':'zh-CN'},{'id':'journal-en','route':EN,'states':['default','archive-open','video-playing'],'locale':'en'}],'not_applicable':['auth','payment','forms','data persistence'],'protected':['CNAME','global CSS','app.js','product routes','book retail status']}
+(docs/'PAGE_MATRIX.json').write_text(json.dumps(matrix,indent=2),encoding='utf-8')
+(docs/'TRACEABILITY.json').write_text(json.dumps({'art':'assets/asset-manifest.json','animation':['13-family-loop.mp4','14-family-loop.gif','15-creative-process.mp4'],'site':['journal-zh','journal-en'],'social':['captions-zh.txt','captions-en.txt','caption-x.txt'],'verification':'QA.md'},indent=2),encoding='utf-8')
+print('Built 2 bilingual journal pages, 4 additive entry links, sitemap, 6 captions, definition pack.')

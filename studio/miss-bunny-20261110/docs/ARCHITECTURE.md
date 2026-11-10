@@ -1,0 +1,2 @@
+# Architecture
+Two new static HTML documents at /stories/miss-bunny/creative-process/ and /en/stories/miss-bunny/creative-process/. Isolated inline styles; no changes to global CSS/app scripts. Assets under /assets/bunny-process/2026-11-10/. Existing root/EN home and two story locales get additive links. GitHub Pages keeps current branch and DNS. One atomic Git tree/commit with lease-safe ref movement. Reproducible motion uses timestamp-pure Pillow composition and ffmpeg; no paid services, external footage or copied music.

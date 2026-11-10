@@ -1,0 +1,2 @@
+# Miss Bunny studio journal
+Audience: readers and domestic/overseas creative followers. Deliver all art, moving family portrait, pencil family sketch, standing girl drawing Bunny with European castle, creative-process film, bilingual captions, source archive, existing-site publication, connected social publication. Do not alter payments, DNS, products, book availability or unrelated content. Domestic publication remains blocked by missing connections and WeChat site-safety access.

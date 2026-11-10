@@ -1,0 +1,51 @@
+{
+  "locales": [
+    "zh-CN",
+    "en"
+  ],
+  "viewports": [
+    {
+      "width": 1440,
+      "height": 1000
+    },
+    {
+      "width": 390,
+      "height": 844
+    }
+  ],
+  "pages": [
+    {
+      "id": "journal-zh",
+      "route": "/stories/miss-bunny/creative-process/",
+      "states": [
+        "default",
+        "archive-open",
+        "video-playing"
+      ],
+      "locale": "zh-CN"
+    },
+    {
+      "id": "journal-en",
+      "route": "/en/stories/miss-bunny/creative-process/",
+      "states": [
+        "default",
+        "archive-open",
+        "video-playing"
+      ],
+      "locale": "en"
+    }
+  ],
+  "not_applicable": [
+    "auth",
+    "payment",
+    "forms",
+    "data persistence"
+  ],
+  "protected": [
+    "CNAME",
+    "global CSS",
+    "app.js",
+    "product routes",
+    "book retail status"
+  ]
+}
